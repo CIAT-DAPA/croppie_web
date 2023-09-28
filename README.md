@@ -42,6 +42,9 @@ Proporcionamos un sencillo protocolo de muestreo basado en una aplicación móvi
 El tablero de instrumentos propone recomendaciones y alertas sincronizadas con el calendario de manejo territorial en estos 10 momentos clave de la producción de café. 
 Identificar el potencial de mejora en cada ciclo es crucial para obtener un café de alta calidad, optimizar el rendimiento de la plantación, fomentar la resiliencia y la sostenibilidad de las prácticas
 
+Recomendaciones: La temperatura se debe regular e incrementar el flujo de aire para mejorar el secado sin afectar los sabores.
+
+
 #### 3.4  Casos de uso c
 
   - Productores: Asesoramiento agronómico personalizado.
