@@ -17,6 +17,9 @@ const Cards = () => {
     {
       title: "Casos de uso",
     },
+    {
+      title: "Open data"
+    }
   ]
   return (
     <section className='containerSection'>
