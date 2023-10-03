@@ -13,7 +13,7 @@ const Banner = () => {
             </p>
         </div>
         <button className='banner_button'>
-            Descargar App
+           <a href='https://play.google.com/store/search?q=croppie&c=apps'>Descargar App</a> 
         </button>
         
     </div>
