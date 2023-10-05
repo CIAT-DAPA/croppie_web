@@ -1,0 +1,38 @@
+.menu{
+    position: fixed; /* Fijar el menú en la ventana */
+    top: 0; /* Colocar el menú en la parte superior */
+    left: 0; /* Colocar el menú en el extremo izquierdo */
+    width: 100%; /* Ocupar todo el ancho de la pantalla */
+    height: 70px; /* Altura del menú */
+    background-color: #ffffff; /* Color de fondo del menú */
+    color: black; /* Color del texto en el menú */
+    letter-spacing: 2px;
+    text-align: center; /* Alinear el texto en el centro */
+    line-height: 20px; /* Alinear verticalmente el texto en el centro */
+    z-index: 999; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.seccionesMenu{
+    display: flex;
+    width: 700px;
+   /*border: 1px red solid;*/
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+.idioma{
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 8px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+ul {
+    list-style: none; /* Quitar viñetas de las listas desordenadas */
+}
+a {
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    color: #333; /* Cambiar el color del texto de los enlaces si es necesario */
+}

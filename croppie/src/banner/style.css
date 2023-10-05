@@ -1,0 +1,38 @@
+.banner {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 30px;    height: calc(100vh - 80px);/* Calcula el alto restando la altura del menú */
+    background-image: url('/background/BannerImage.svg'); /* Agrega la imagen de fondo */
+    background-repeat: no-repeat;
+    background-position: center; /* Centra la imagen en el banner */
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: solid 1px #000; */
+  
+}
+.banner_containTex1{
+    font-size: 52px;
+    color: #fff;
+    width: 80%;
+    text-align: start;
+}
+.banner_containTex2{
+    font-size: 21px; 
+    color: #fff;
+    width: 55%;
+    text-align: start;
+
+}
+.banner_button{
+    background-color: #FEFEFF;
+    color: #555555;
+    padding: 25px 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}

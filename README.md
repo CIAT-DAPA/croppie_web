@@ -45,7 +45,7 @@ Identificar el potencial de mejora en cada ciclo es crucial para obtener un caf√
 Recomendaciones: La temperatura se debe regular e incrementar el flujo de aire para mejorar el secado sin afectar los sabores.
 
 
-#### 3.4  Casos de uso c
+#### 3.4  Casos de uso 
 
   - Productores: Asesoramiento agron√≥mico personalizado.
   - Cooperativas: Las cooperativas aseguran su rendimiento y planifican sus ventas.
