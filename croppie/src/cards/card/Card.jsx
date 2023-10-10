@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './style.css'
 
-const Card = ({ title }) => {
+const Card = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const openModal = () => {
@@ -19,11 +19,12 @@ const Card = ({ title }) => {
       {isModalVisible && (
         <div className='modal'>
             {/* Contenido del modal este deberia pasarse por props */}
-            <button onClick={closeModal}>
+            <button className='btn-close' onClick={closeModal}>
                 <img src="/icons/x.svg" alt="icono-x" />          
             </button>
             <section className='modal-section'>
-                <h4 className='modal_title'>{title}</h4>
+                <h4 className='modal_title'>Qué es 
+Croppie</h4>
                 <div className='modal_contain'>
 
                     <article  className='modal_contain1' >
@@ -37,14 +38,21 @@ const Card = ({ title }) => {
                         <p className='text_icon'>50% más rápido que métodos existentes</p>
                       </div>
                       <div className='container_icons'>
-                        <img className='image_icon' src="/icons/clockGreen.svg" alt="" />
-                        <p className='text_icon'>50% más rápido que métodos existentes</p>
+                        <img className='image_icon' src="/icons/phoneGreen.svg" alt="" />
+                        <p className='text_icon'>Uso offline</p>
                       </div>
                       <div className='container_icons'>
-                        <img className='image_icon' src="/icons/clockGreen.svg" alt="" />
-                        <p className='text_icon'>50% más rápido que métodos existentes</p>
+                        <img className='image_icon' src="/icons/cycleGreen.svg" alt="" />
+                        <p className='text_icon'>Estandarización del muestreos</p>
                       </div>
-                      
+                      <div className='container_icons'>
+                        <img className='image_icon' src="/icons/cameraGreen.svg" alt="" />
+                        <p className='text_icon'>Evidencia digital</p>
+                      </div>
+                      <div className='container_icons'>
+                        <img className='image_icon' src="/icons/pinGreen.svg" alt="" />
+                        <p className='text_icon'>Información georreferenciada para trazabilidad total</p>
+                      </div>
                     </article>
                 </div>
               
@@ -53,7 +61,8 @@ const Card = ({ title }) => {
       )}
     </div>
     <p className='card_title'>
-      {title}
+    qué es 
+croppie
     </p>
 
     <span className='card_btn' onClick={openModal}>

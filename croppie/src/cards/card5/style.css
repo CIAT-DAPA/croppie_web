@@ -1,0 +1,102 @@
+
+.card_container{
+    width: 280px;
+    height: 430px;
+    border-radius: 30px;  
+    background-image: url('/background/bg-card.svg'); /* Agrega la imagen de fondo */
+    background-repeat: no-repeat;
+    background-position: center; /* Centra la imagen en el banner */
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+.card_title{
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 50%;
+    text-align: center;
+}
+.card_btn{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.modal {
+    position: absolute; /* Establecer la posición absoluta para superponer el modal */
+    top: 35%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar exactamente */
+    background-color: rgb(255, 255, 255); /* Fondo blanco translúcido */
+    padding: 10px; /* Espacio interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 10px; /* Esquinas redondeadas */
+    width: 65%; /* Ancho del modal */
+    height: 130%; /*Alto del modal*/
+    display: flex; /* Mostrar contenido en línea horizontal */
+    flex-direction: column;
+    align-items: center;
+    color: #373737;
+}
+
+  /* Estilo de fondo borroso en el contenedor de tarjeta cuando se abre el modal */
+.card_container.active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo borroso */
+    z-index: 999; /* Z-index alto para estar sobre otros elementos */
+}
+.modal_title{
+    color: #555555;
+    font-size: 40px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin-left: 190px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.modal5_contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0 0 0;
+}
+
+.modal5_contain article div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 95px;
+}
+.modal5_contain article{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 20px;
+
+}
+.modal5_contain article div p{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 22px;
+    text-align: start;
+    color: #555555;
+}
+.modal5_contain article div img{
+    width: 70px;
+}
