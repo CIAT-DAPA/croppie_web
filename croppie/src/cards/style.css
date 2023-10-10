@@ -8,8 +8,8 @@
     width: 90%;
 }
 .titleSection{
-    font-size: 38px;
-    color: #373737;
+    color: #555555;
+    font-size: 40px;
     
 }
 .containerSection{
@@ -18,5 +18,6 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
     
 }
