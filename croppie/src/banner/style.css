@@ -1,7 +1,8 @@
 .banner {
     width: 100%;
     margin-top: 80px;
-    margin-bottom: 30px;    height: calc(100vh - 80px);/* Calcula el alto restando la altura del menú */
+    margin-bottom: 30px;   
+     height: calc(100vh - 80px);/* Calcula el alto restando la altura del menú */
     background-image: url('/background/BannerImage.svg'); /* Agrega la imagen de fondo */
     background-repeat: no-repeat;
     background-position: center; /* Centra la imagen en el banner */
@@ -10,6 +11,7 @@
     align-items: center;
     justify-content: space-around;
     /* border: solid 1px #000; */
+    font-family: serif;
   
 }
 .banner_containTex1{

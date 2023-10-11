@@ -1,0 +1,53 @@
+.containerWWA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0 ;
+
+    
+}
+.containerWWA h2{
+    color: #555555;
+    font-size: 40px;
+    
+}
+.containmap{
+    background-image: url('/illustrations/mapa-wwa.svg'); 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+    width: 970px;
+    height: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.containmap_btn{
+    width: 850px;
+    display: flex;
+    gap: 350px;
+}
+.containmap_btn div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.containmap_btn div button{
+    width: 180px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3D5449;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-hiden{
+    visibility: hidden;
+
+}
