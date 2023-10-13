@@ -3,7 +3,7 @@ import './style.css'
 
 const Banner = () => {
   return (
-    <div className='banner'>
+    <div id="banner" className='banner'>
         <div className='banner_contain'> 
             <h2 className='banner_containTex1'>
                 Estimado de rendimiento  asistido por IA

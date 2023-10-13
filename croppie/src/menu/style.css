@@ -3,7 +3,7 @@
     top: 0; /* Colocar el menú en la parte superior */
     left: 0; /* Colocar el menú en el extremo izquierdo */
     width: 100%; /* Ocupar todo el ancho de la pantalla */
-    height: 70px; /* Altura del menú */
+    height: 90px; /* Altura del menú */
     background-color: #ffffff; /* Color de fondo del menú */
     color: black; /* Color del texto en el menú */
     letter-spacing: 2px;
@@ -13,7 +13,12 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+    -webkit-box-shadow: 0px 10px 5px -6px rgba(109,120,116,1);
+    -moz-box-shadow: 0px 10px 5px -6px rgba(109,120,116,1);
+    box-shadow: 0px 10px 5px -6px rgba(109,120,116,1);
+}
+.menu img{
+    width: 10em;
 }
 .seccionesMenu{
     display: flex;

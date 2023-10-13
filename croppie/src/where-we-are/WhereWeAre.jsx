@@ -3,7 +3,7 @@ import './style.css'
 
 const WhereWeAre = () => {
   return (
-    <section className='containerWWA'>
+    <section id="where-we-are" className='containerWWA'>
       <h2>Dónde estamos</h2>
       <div className='containmap'>
         <div className='containmap_btn'>

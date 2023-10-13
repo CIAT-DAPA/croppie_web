@@ -11,7 +11,7 @@ const Cards = () => {
   
   
   return (
-    <section className='containerSection'>
+    <section id= "cards" className='containerSection'>
     <h3 className='titleSection'>Estimado de rendimiento asistido por IA</h3>
     
     

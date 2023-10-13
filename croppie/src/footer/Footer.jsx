@@ -3,7 +3,7 @@ import './style.css'
 
 const Footer = () => {
   return (
-    <section className='containerFooter'>
+    <section id="contact" className='containerFooter'>
         <div className='containerFooter_One'>
             <img src="/logos/logoBorder.svg" className="logoCroppie" alt="logo croppie" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit, eaque cupiditate ad neque aspernatur maxime mollitia aperiam exercitationem delectus harum est, hic suscipit iste aut pariatur consequatur vel velit?</p>

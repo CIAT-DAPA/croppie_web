@@ -10,11 +10,11 @@ function Menu() {
         <img src="/logos/logoBorder.svg" className="logoCroppie" alt="logo croppie" />
         <nav>
             <ul className='seccionesMenu'>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/acerca">Croppie</a></li>
-                <li><a href="/servicios">Quíenes somos</a></li>
-                <li><a href="/contacto">Dónde estamos</a></li>
-                <li><a href="/contacto">Contacto</a></li>
+                <li><a href="#banner">Inicio</a></li>
+                <li><a href="#cards">Croppie</a></li>
+                <li><a href="#about-us">Quíenes somos</a></li>
+                <li><a href="#where-we-are">Dónde estamos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
         <div className='idioma'>

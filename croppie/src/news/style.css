@@ -16,10 +16,10 @@
     background-image: url('/background/BannerImage.svg');
     background-repeat: no-repeat;
     background-position: center; 
-    background-size: cover;
+    background-size: contain;
     border-radius: 30px;
-    width: 1459px;
-    height: 530px;
+    width: 95vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
