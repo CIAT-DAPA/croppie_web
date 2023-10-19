@@ -82,9 +82,10 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .modal_contain1{
-    display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -101,15 +102,17 @@
     height: 90px;
 }
 .icons_cover{
-    height: 350px;
-    width: 200px;
+     width: 100px;
 }
 .text_cover{
     width: 260px;
-    font-size: 20px;
+    font-size: 18px;
     flex: 2; /* Hacer que el contenido ocupe el espacio disponible */
   text-align: left; /* Alinear el texto a la izquierda */
   /* Otros estilos para el contenido del modal */
+}
+.modal_contain2 .container_icons .text_icon{
+    font-size: 20px;
 }
 .modal-section{
     display: flex;
@@ -127,3 +130,7 @@
     width: 250px;
     text-align: start;
 }
+.btn-close{
+    font-size: 20px;
+    color:lightgray;
+} 

@@ -10,10 +10,10 @@
     font-size: 40px;
     align-items: center;    
 }
-.containerAbout .articles {    
-    display: inherit;
+.containerAbout .articlesSponsors {    
+    display: flex;
     justify-content: space-between;
-    width: 100em;
+    width: 100vw;
     
 }
 .containerAbout article{
@@ -21,18 +21,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin:  0px 3em; 
+    margin:  0px 1.3em; 
 }
 .containerAbout article .img-logo{
-    height: 50%;    
-    justify-content: center;
+   width: 100%;
 }
 .containerAbout article img{
-    width: 400px;    
+    width: 20vw;    
 }
-.containerAbout article .img-producers{
-    width: 400px;       
-}
+
 .containerAbout article div{
     width: 400px;
     height: 400px;

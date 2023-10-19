@@ -80,7 +80,8 @@
     height: 95px;
 }
 .modal5_contain article{
-    width: 400px;
+    width: 50%;
+    margin-left: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,8 +96,14 @@
     width: 100%;
     font-size: 22px;
     text-align: start;
-    color: #555555;
+    color: #555555;    
 }
 .modal5_contain article div img{
-    width: 70px;
+    width: 10%;
+    margin-right: 10px;
+
 }
+.modal2 .btn-close{
+    font-size: 20px;
+    color:lightgray;
+} 

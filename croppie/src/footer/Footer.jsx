@@ -6,41 +6,41 @@ const Footer = () => {
     <section id="contact" className='containerFooter'>
         <div className='containerFooter_One'>
             <img src="/logos/logoBorder.svg" className="logoCroppie" alt="logo croppie" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit, eaque cupiditate ad neque aspernatur maxime mollitia aperiam exercitationem delectus harum est, hic suscipit iste aut pariatur consequatur vel velit?</p>
+            <p>Croppie es una aplicación móvil diseñada para ayudar a los pequeños caficultores en sus decisiones clave.
+</p>
             <div className='socialMedia'>
                 <img src="/icons/Facebook - Original.svg" alt="" />
                 <img src="/icons/Twitter - Original.svg" alt="" />
                 <img src="/icons/Instagram - Original.svg"  alt="" />
-                <img src="/icons/LinkedIn - Original.svg"  alt="" />
-            </div>
-            <small>© 2021 . All rights reserved.</small>
+           </div>
+            <small>© 2023. All rights reserved.</small>
         </div>
         <div className='containerFooter_Tow'>
-            <span className='footerTitle'>Take a tour</span>
-            <span>Home</span>
-            <span>Croppie</span>
-            <span>Quienes somos</span>
-            <span>Donde estamos</span>
+            <span className='footerTitle'>Menú</span>
+            <span><a href="#banner">Inicio</a></span>
+            <span><a href="#cards">Croppie</a></span>
+            <span><a href="#about-us">Quíenes somos</a></span>
+            <span><a href="#where-we-are">Dónde estamos</a></span>
         </div>
         <div className='containerFooter_Three'>
-            <span className='footerTitle'>Our Companies</span>
-            <span>CIAT</span>
-            <span>Tecnicafé</span>
-            <span>Producer Direct</span>
+            <span className='footerTitle'>Nosotros</span>
+            <span><a href='https://alliancebioversityciat.org/es' target="_blank">CIAT</a></span>
+            <span><a href='https://tecnicafe.co/' target="_blank">Tecnicafé</a></span>
+            <span><a href='https://producersdirect.org/' target="_blank">Producer Direct</a></span>
             <span className='btn-hiden'>Producer Direct</span>
         </div>
-        <div className='containerFooter_Four'>
+        <div className='containerFooter_Three'>
             <span className='footerTitle'>Contacto</span>
-            <p>
-                Romain Gauteon
+            <span>Romain Gauteon
                 nombre@ciat.org
                 (+57)3238494
-            </p>
-            <p>
+            </span>
+            <span>
                 Comunicaciones Ciat
                 comunicaciones@ciat-org
                 (+57)3238494
-            </p>
+            </span>
+            <span></span>
         </div>
     </section>
   )

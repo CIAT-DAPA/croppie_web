@@ -8,10 +8,9 @@ const News = () => {
         <div className='contaiNews'>
             <div>
                 <h3>App CROPPIE </h3>
-                <p>We provide a complete service for the sale,
-                purchase or rental of real estate.</p>
-                <button>DESCARGAR</button>
-                <span>Ver más</span>
+                <p>Croppie es una aplicación móvil diseñada para ayudar a los pequeños caficultores en sus decisiones clave.</p>
+                <button><a href='https://play.google.com/store/search?q=croppie&c=apps' target='_black'>Descargar App</a></button>
+                <span></span>
             </div>
             <img src="/icons/phone.svg" alt="" />
         

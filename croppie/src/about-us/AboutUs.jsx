@@ -13,7 +13,7 @@ const AboutUs = () => {
     <section className='articles' >
       <article>
         <div className='img-logo'>
-        <img src="/logos/logoCiatEs.png" alt="logo-ciat" />
+        <a href='https://alliancebioversityciat.org/es' target="_blank"> <img src="/logos/logoCiatEs.png" alt="logo-ciat" /></a>
         </div>
         <div>
             <p>
@@ -23,7 +23,7 @@ const AboutUs = () => {
       </article>
       <article>
       <div className='img-logo'>
-        <img className='img-producers' src="/logos/logoProducersDirect.png" alt="logo-producers-direct" />
+      <a href='https://producersdirect.org/' target="_blank"><img className='img-producers' src="/logos/logoProducersDirect.png" alt="logo-producers-direct" /></a>
         </div>
         <div>
             <p>
@@ -32,7 +32,7 @@ const AboutUs = () => {
       </article>
       <article>
       <div className='img-logo'>
-        <img src="/logos/logoTecnicafe.png" alt="logo-tecniafe" /></div>
+      <a href='https://tecnicafe.co/' target="_blank"><img src="/logos/logoTecnicafe.png" alt="logo-tecniafe" /></a></div>
         <div>
             <p>
             Tecnicafé, es una corporación mixta sin animo de lucro que ha sido creada como el Primer Parque Tecnológico abierto y global, ubicado en el departamento del Cauca en Colombia. Con el objetivo de realizar innovación transformativa en el mundo del café a través de la sostenibilidad.            </p>

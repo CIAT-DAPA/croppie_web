@@ -101,3 +101,7 @@
 .modal4_contain article.contain_art1 span{
     width: 100%;
 }
+.modal2 .btn-close{
+    font-size: 20px;
+    color:lightgray;
+} 

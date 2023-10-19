@@ -20,7 +20,7 @@ const Card = () => {
         <div className='modal'>
             {/* Contenido del modal este deberia pasarse por props */}
             <button className='btn-close' onClick={closeModal}>
-                <img src="/icons/x.svg" alt="icono-x" />          
+               X
             </button>
             <section className='modal-section'>
                 <h4 className='modal_title'>Qué es 

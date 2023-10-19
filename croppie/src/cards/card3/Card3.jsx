@@ -36,38 +36,36 @@ const Card = () => {
         <div className='modal'>
             {/* Contenido del modal este deberia pasarse por props */}
             <button className='btn-close' onClick={closeModal}>
-                <img src="/icons/x.svg" alt="icono-x" />          
+             X
             </button>
             <section className='modal-section'>
-                <h4 className='modal_title'>tablero de instrumentos</h4>
+              <h4 className='modal_title'>Tablero de instrumentos</h4>
                 <div className="slider-container">
-      <button className="slider-button" onClick={prevSlide}>
-      <img src="/icons/prev.svg" alt="" />
-      </button>
-      <div className={`slider-slide ${currentSlide === 1 ? 'active' : ''}`}>
-       <div className='text-slide1'>
-        <p>El tablero de instrumentos propone recomendaciones y alertas sincronizadas con el calendario de manejo territorial en estos 10 momentos clave de la producción de café.</p>
-       </div>
-       <div   className='text-slide1'>
-       <p>Identificar el potencial de mejora en cada ciclo es crucial para obtener un café de alta calidad, optimizar el rendimiento de la plantación, fomentar la resiliencia y la sostenibilidad de las prácticas</p>
-       </div>
-      </div>
-      <div className={`slider-slide ${currentSlide === 2 ? 'active' : ''}`}>
-      <img  className='img-slide2'  src="/illustrations/dashboardES.svg" alt="arboles-img" />
-      </div>
-      
-      <button className="slider-button" onClick={nextSlide}>
-        <img src="/icons/next (1).svg" alt="" />
-      </button>
-    </div>
-                
+                 
+                  <div className={`slider-slide ${currentSlide === 1 ? 'active' : ''}`}>
+                  <div className='text-slide1'>
+                    <p>El tablero de instrumentos propone recomendaciones y alertas sincronizadas con el calendario de manejo territorial en estos 10 momentos clave de la producción de café.</p>
+                  </div>
+                  <div   className='text-slide1'>
+                  <p>Identificar el potencial de mejora en cada ciclo es crucial para obtener un café de alta calidad, optimizar el rendimiento de la plantación, fomentar la resiliencia y la sostenibilidad de las prácticas</p>
+                  </div>
+                  </div>
+                  <div className={`slider-slide ${currentSlide === 2 ? 'active' : ''}`}>
+                  <img  className='img-slide2'  src="/illustrations/dashboardES.svg" alt="arboles-img" />
+                  </div>
+                  <button className="slider-button-left" onClick={prevSlide}>
+                    <img src="/icons/prev.svg" alt="" />
+                  </button>
+                  <button className="slider-button-right" onClick={nextSlide}>
+                    <img src="/icons/next (1).svg" alt="" />
+                  </button>
+                </div>                
             </section>
         </div>
       )}
     </div>
     <p className='card_title'>
-    tablero de
-instrumentos
+    dashboard
     </p>
 
     <span className='card_btn' onClick={openModal}>

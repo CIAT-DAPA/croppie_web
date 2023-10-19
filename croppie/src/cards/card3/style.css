@@ -18,7 +18,7 @@
     font-size: 22px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    width: 50%;
+    width: 100%;
     text-align: center;
 }
 .card_btn{
@@ -67,6 +67,7 @@
     align-items: center;
 }
 .slider-container {
+    
     width: 980px;
     height: 460px;
     overflow: hidden;
@@ -108,7 +109,26 @@
     width: 780px;
     height: 400px;
 }
-.slider-button{
+.slider-button-left{
+    position: relative;
     background-color: transparent;
+    left: -37%;
+    top: 45%;
     border: none;
+    color:lightgrey;
+    opacity: 0.4;
 }
+.slider-button-right{ 
+    position: relative;
+    border: none;
+    background-color: transparent;
+    left: 37%;
+    top: 45%;
+    color:lightgrey;
+    opacity: 0.4;
+    
+}
+.modal2 .btn-close{
+    font-size: 20px;
+    color:lightgray;
+} 
