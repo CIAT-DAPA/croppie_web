@@ -27,13 +27,14 @@ const Card = () => {
                 <h4 className='modal_title'>Casos de uso</h4>
                 <section className='modal4_contain'>
                   <article className='contain_art1'>
-                    <span> Productores</span>
-                    <span>Cooperativas</span>
+                  <img className='icons-conet' src="/illustrations/useCasesES.svg " alt="actors-img" />
+                  {/* <span> Productores</span> */}
+                    {/* <span>Cooperativas</span>
                     <span>Financieras</span>
                     <span>Aseguradoras</span>
-                    <span>Exportadoras</span>
+                    <span>Exportadoras</span> */}
                   </article>
-                  
+{/*                   
                     <img className='icons-conet' src="/illustrations/actorConnections.png " alt="actors-img" />
                  
                   <article className='contain_art2'>
@@ -44,7 +45,7 @@ const Card = () => {
                     <p>Asesoramiento agronómico personalizado.
 
                     </p>
-                  </article>
+                  </article> */}
                 </section>
                 
               

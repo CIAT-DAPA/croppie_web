@@ -81,26 +81,10 @@
 
 }
 .modal4_contain  img{
-    width: 30%;
+    width: 100vh;
+    margin-top: 40%;
 }
-.modal4_contain article.contain_art2{
-    gap: 5px;
-    text-align: start;
-    font-size: 17px;
-    
-}
-.modal4_contain article.contain_art2 p{
-   width: 290px;
-    
-}
-.modal4_contain article.contain_art1{
-    gap: 60px;
-    font-size: 20px;
-    align-items: center;
-}
-.modal4_contain article.contain_art1 span{
-    width: 100%;
-}
+
 .modal2 .btn-close{
     font-size: 20px;
     color:lightgray;
