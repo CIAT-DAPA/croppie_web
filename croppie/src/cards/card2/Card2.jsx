@@ -47,15 +47,19 @@ const Card = () => {
        <div className='text-slide1'>
         <p>Proporcionamos un sencillo protocolo de muestreo basado en una aplicación móvil que utiliza inteligencia artificial (IA) para realizar recuentos de cerezas de café y estimar el rendimiento en las parcelas de las fincas cafeteras.</p>
        </div>
-       <div  className='img-slide1'>
-       <img  src="/steps/step1.svg" alt="arboles-img" />
-       </div>
+       <div  className='img-slide1 spanish'>
+       <img  src="/steps/step1.svg" alt="step1-img" />
+       <img className='img-slide1 english' src="/steps/step1EN.svg" alt="step1-img" />
+       </div>      
+           
       </div>
       <div className={`slider-slide ${currentSlide === 2 ? 'active' : ''}`}>
-      <img  className='img-slide2'  src="/steps/step234ES.svg" alt="arboles-img" />
+      <img  className='img-slide2' src="/steps/step234ES.svg" alt="step234-img" />
+      <img  className='img-slide2 english' src="/steps/step234EN.svg" alt="step234-img" />
       </div>
       <div className={`slider-slide ${currentSlide === 3 ? 'active' : ''}`}>
-      <img  className='img-slide3'  src="/steps/calculation.svg" alt="arboles-img" />
+      <img  className='img-slide3'  src="/steps/calculation.svg" alt="step5-img" />
+      <img  className='img-slide3 english'  src="/steps/step5Yield.svg" alt="step5-img" />
       </div>
       <button className="slider-button-left" onClick={prevSlide}>
       <img src="/icons/prev.svg" alt="" />

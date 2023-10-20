@@ -1,4 +1,6 @@
-
+.english{
+    display: none;
+}
 .card_container2{
     width: 280px;
     height: 430px;

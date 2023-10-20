@@ -13,7 +13,10 @@ const AboutUs = () => {
     <section className='articles' >
       <article>
         <div className='img-logo'>
-        <a href='https://alliancebioversityciat.org/es' target="_blank"> <img src="/logos/logoCiatEs.png" alt="logo-ciat" /></a>
+          <a href='https://alliancebioversityciat.org/es' target="_blank">
+            <img src="/logos/logoCiatEs.png" alt="logo-ciat" />
+            <img className= "english" src="/logos/logoCiatEN.png" alt="logo-ciat" />
+          </a>
         </div>
         <div>
             <p>

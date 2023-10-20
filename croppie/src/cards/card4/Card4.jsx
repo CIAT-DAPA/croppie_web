@@ -28,24 +28,9 @@ const Card = () => {
                 <section className='modal4_contain'>
                   <article className='contain_art1'>
                   <img className='icons-conet' src="/illustrations/useCasesES.svg " alt="actors-img" />
-                  {/* <span> Productores</span> */}
-                    {/* <span>Cooperativas</span>
-                    <span>Financieras</span>
-                    <span>Aseguradoras</span>
-                    <span>Exportadoras</span> */}
+                  <img className='icons-conet english' src="/illustrations/useCasesEN.svg " alt="actors-img" />
                   </article>
-{/*                   
-                    <img className='icons-conet' src="/illustrations/actorConnections.png " alt="actors-img" />
-                 
-                  <article className='contain_art2'>
-                    <p>Las cooperativas aseguran su rendimiento y planifican sus ventas.</p>
-                    <p>Facilitar a los pequeños productores el acceso a préstamos y créditos.</p>
-                    <p>Mejorar los productos de seguro basados en índices.</p>
-                    <p>Evitar posible evasión de la ley de deforestación y tener una trazabilidad del café.</p>
-                    <p>Asesoramiento agronómico personalizado.
 
-                    </p>
-                  </article> */}
                 </section>
                 
               

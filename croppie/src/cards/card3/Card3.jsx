@@ -51,7 +51,8 @@ const Card = () => {
                   </div>
                   </div>
                   <div className={`slider-slide ${currentSlide === 2 ? 'active' : ''}`}>
-                  <img  className='img-slide2'  src="/illustrations/dashboardES.svg" alt="arboles-img" />
+                  <img  className='img-slide2'  src="/illustrations/dashboardES.svg" alt="dashboard-img" />
+                  <img  className='img-slide2 english'  src="/illustrations/dashboardEN.svg" alt="dashboard-img" />
                   </div>
                   <button className="slider-button-left" onClick={prevSlide}>
                     <img src="/icons/prev.svg" alt="" />
