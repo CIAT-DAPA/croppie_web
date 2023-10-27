@@ -15,7 +15,7 @@ function App() {
     <Banner />
     <Cards />
     <AboutUs />
-    <Sponsors />
+    <Sponsors />   
     <WhereWeAre />
     <News />
     <Footer />

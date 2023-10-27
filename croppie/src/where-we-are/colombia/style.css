@@ -1,0 +1,142 @@
+.english{
+    display: none;
+}
+
+.card_title_col{
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+.card_btn{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.modal {
+    position: absolute; /* Establecer la posición absoluta para superponer el modal */
+    top: 600%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar exactamente */
+    background-color: rgb(255, 255, 255); /* Fondo blanco translúcido */
+    padding: 10px; /* Espacio interno */
+    box-shadow: 0 0 10px rgba(62, 58, 58, 0.23); /* Sombra suave */
+    border-radius: 10px; /* Esquinas redondeadas */
+    width: 65%; /* Ancho del modal */
+    height: 85vh; /*Alto del modal*/
+    display: flex; /* Mostrar contenido en línea horizontal */
+    flex-direction: column;
+    align-items: center;
+    color: #373737;
+}
+
+
+  /* Estilo de fondo borroso en el contenedor de tarjeta cuando se abre el modal */
+.card_container.active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo borroso */
+    z-index: 999; /* Z-index alto para estar sobre otros elementos */
+}
+.modal_title_col{
+
+    color: #555555;
+    font-size: 25px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin-left: 190px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.slider-container {
+    
+    width: 980px;
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    position: absolute;
+    transition: transform 0.5s;
+    transform: translateX(100%);
+}
+
+.subtitle{
+    display: flex;
+}
+
+.slider-slide.active {
+    transform: translateX(0);
+}
+.text-slide1_col{
+    width: 340px;
+    height: 400px;
+}
+.text-slide1_col p{
+   padding: 10px 20px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #555555;
+    text-align: start;
+    line-height: 1.5;
+}
+.img-slide1 img{
+    width: 340px;
+    height: 400px;
+
+}
+.img-slide2, .img-slide3{
+    width: 780px;
+    height: 400px;
+}
+.slider-button-left{
+    position: relative;
+    background-color: transparent;
+    left: 4%;
+    top: 45%;
+    border: none;
+    color:lightgrey;
+    opacity: 0.4;
+}
+.slider-button-right{ 
+    position: relative;
+    border: none;
+    background-color: transparent;
+    left: 60%;
+    top: 45%;
+    color:lightgrey;
+    opacity: 0.4;
+    
+}
+.modal2 .btn-close{
+    
+    font-size: 20px;
+    color:lightgray;
+} 
+
+button{
+    width: 180px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3D5449;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
