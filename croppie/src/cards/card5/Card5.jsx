@@ -14,7 +14,7 @@ const Card = () => {
 
 
   return (
-    <div className='card_container'>
+    <div className='card_container' >
     <div>
       {isModalVisible && (
         <div className='modal'>
@@ -58,10 +58,13 @@ const Card = () => {
       )}
     </div>
     <p className='card_title'>
+
     Open data
+
     </p>
 
-    <span className='card_btn' onClick={openModal}>
+    <span className='card_btn' onClick={openModal} >
+      <div className='space'>  c </div>
       Ver más
     </span>
 

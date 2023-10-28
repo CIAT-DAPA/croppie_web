@@ -14,26 +14,27 @@
     cursor: pointer;
 }
 
-.modal {
+.modal_pe {
     position: absolute; /* Establecer la posición absoluta para superponer el modal */
-    top: 600%; /* Centrar verticalmente */
+    top: 700%; /* Centrar verticalmente */
     left: 50%; /* Centrar horizontalmente */
     transform: translate(-50%, -50%); /* Centrar exactamente */
     background-color: rgb(255, 255, 255); /* Fondo blanco translúcido */
     padding: 10px; /* Espacio interno */
     box-shadow: 0 0 10px rgba(62, 58, 58, 0.23); /* Sombra suave */
     border-radius: 10px; /* Esquinas redondeadas */
-    width: 65%; /* Ancho del modal */
+    width: 80%; /* Ancho del modal */
     height: 85vh; /*Alto del modal*/
     display: flex; /* Mostrar contenido en línea horizontal */
     flex-direction: column;
     align-items: center;
     color: #373737;
+    z-index: 2;
 }
 
 
   /* Estilo de fondo borroso en el contenedor de tarjeta cuando se abre el modal */
-.card_container.active::before {
+.card_container_col.active::before {
     content: '';
     position: fixed;
     top: 0;
@@ -55,7 +56,7 @@
     margin-bottom: 15px;
     align-items: center;
 }
-.slider-container {
+.slider-container-pe {
     
     width: 980px;
     height: 460px;
@@ -63,7 +64,7 @@
     position: relative;
 }
 
-.slider-slide {
+.slider-slide-pe {
     width: 100%;
     height: 100%;
     display: flex;
@@ -75,18 +76,15 @@
     transform: translateX(100%);
 }
 
-.subtitle{
-    display: flex;
-}
 
-.slider-slide.active {
+.slider-slide-pe.active {
     transform: translateX(0);
 }
-.text-slide1_col{
+.text-slide1_pe{
     width: 340px;
     height: 400px;
 }
-.text-slide1_col p{
+.text-slide1_pe p{
    padding: 10px 20px;
     letter-spacing: 1px;
     font-size: 18px;
@@ -94,41 +92,40 @@
     text-align: start;
     line-height: 1.5;
 }
-.img-slide1 img{
-    width: 340px;
-    height: 400px;
 
-}
-.img-slide2, .img-slide3{
-    width: 780px;
-    height: 400px;
-}
-.slider-button-left{
+.slider-button-left-pe{
     position: relative;
     background-color: transparent;
-    left: 4%;
-    top: 45%;
+    left: 11%;
+    top: 55%;
     border: none;
     color:lightgrey;
     opacity: 0.4;
 }
-.slider-button-right{ 
+.slider-button-right-pe{ 
     position: relative;
     border: none;
     background-color: transparent;
-    left: 60%;
-    top: 45%;
+    right: -82%;
+    top: 55%;
     color:lightgrey;
     opacity: 0.4;
     
 }
-.modal2 .btn-close{
-    
+.btn-close-pe{
+    position: relative;
+   left:48%;
+    border: none;
+    justify-content: right;
     font-size: 20px;
     color:lightgray;
 } 
 
-button{
+.btn-country-col{
+    z-index: initial;
+    position:relative;
+    right: 200%;
+    top: 55vh;
     width: 180px;
     padding: 15px;
     border-radius: 10px;
@@ -140,3 +137,4 @@ button{
     text-transform: uppercase;
     cursor: pointer;
 }
+

@@ -1,5 +1,13 @@
 
-
+.cards_container_col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    position: relative;
+    margin-bottom: 30px;
+    width: 90%;
+}
 .containerWWA {
     display: flex;
     flex-direction: column;
@@ -52,4 +60,10 @@
 .btn-hiden{
     visibility: hidden;
 
+}
+
+.btn-pe{
+    position: relative;
+    top: 35vh;
+    right: 2.5vw;
 }

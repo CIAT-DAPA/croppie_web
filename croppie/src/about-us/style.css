@@ -50,12 +50,15 @@
     color: #555555; 
     height: 50%;
 }
-.containerAbout article div p{
-    font-size: 23px;
+.containerAbout article div .text{
+    margin-top: 50px;
+    font-size: 19px;
     align-self: flex-start;
+    letter-spacing: 2px;
+    line-height: 27px;
 
    
 }
 .containerAbout article div span{
-    font-size: 23px;
+    font-size: 19px;
 }

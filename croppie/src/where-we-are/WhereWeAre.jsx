@@ -1,8 +1,8 @@
 import React from 'react'
 import './style.css'
-import Colombia from './colombia/Colombia'
-import Peru from './peru/Peru'
-import Uganda from './uganda/Uganda'
+import Colombia from './countries/Colombia'
+
+
 
 const WhereWeAre = () => {
   return (
@@ -11,15 +11,25 @@ const WhereWeAre = () => {
         
         <h2>Dónde estamos</h2>
   
-        <div className='cards_container'><Colombia/></div>
-        <div className='cards_container'><Peru/></div>    
-        <div className='cards_container'><Uganda/></div>
-        
+        <div className='cards_container_col'><Colombia/></div>
+   
+   
+   
+
         <div className='containmap'>
     
         <div className='containmap_btn'>
 
-           
+        <div>
+            <button className='btn-pe'> Perú</button>
+        </div>
+        <div >
+
+            <button  className='btn-hiden'>Uganda</button>
+            <button  className='btn-hiden'>Uganda</button>
+            <button>Uganda</button>
+            <button  className='btn-hiden'>Uganda</button>
+        </div>
         </div>
 
       </div>

@@ -12,13 +12,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 90px;
+    align-self: start;
+  
 }
 .card_title{
     font-size: 22px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    width: 50%;
+    width: 80%;
     text-align: center;
 }
 .card_btn{
@@ -107,3 +108,8 @@
     font-size: 20px;
     color:lightgray;
 } 
+
+
+.space{
+    color: transparent;
+    }

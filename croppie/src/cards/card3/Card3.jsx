@@ -70,6 +70,7 @@ const Card = () => {
     </p>
 
     <span className='card_btn' onClick={openModal}>
+      <div className='space'>c</div>
       Ver más
     </span>
 
