@@ -108,8 +108,7 @@
     width: 260px;
     font-size: 18px;
     flex: 2; /* Hacer que el contenido ocupe el espacio disponible */
-  text-align: left; /* Alinear el texto a la izquierda */
-  /* Otros estilos para el contenido del modal */
+  text-align: justify; 
 }
 .modal_contain2 .container_icons .text_icon{
     font-size: 20px;

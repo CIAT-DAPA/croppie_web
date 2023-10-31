@@ -43,6 +43,7 @@
     flex-direction: column;
     align-items: center;
     color: #373737;
+    border: solid 1px #3D5449;
 }
 
 
@@ -90,16 +91,20 @@
 .slider-slide.active {
     transform: translateX(0);
 }
-.text-slide1{
+.text-slide2{
     width: 340px;
     height: 400px;
+    display: flex;
+    align-items: center;
+
 }
-.text-slide1 p{
+.text-slide2 p{
     letter-spacing: 1px;
-    font-size: 23px;
+    font-size: 18px;
     color: #555555;
-    text-align: start;
+    text-align: justify;
     line-height: 1.5;
+    
 }
 .img-slide1 img{
     width: 340px;

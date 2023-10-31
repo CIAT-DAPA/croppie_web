@@ -23,6 +23,8 @@ function Menu() {
     const targetSection = document.getElementById(sectionId);
     if (targetSection) {
       targetSection.scrollIntoView({ behavior: 'smooth' });
+      // Establecer un breve retraso para actualizar la clase activa
+      setTimeout(() => setActiveSection(sectionId), 100);
     }
   };
 

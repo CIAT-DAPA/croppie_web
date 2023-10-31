@@ -80,12 +80,12 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    gap: 20px;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     position: absolute;
     transition: transform 0.5s;
-    transform: translateX(100%);
+    transform: translateY(100%);
 }
 
 .slider-slide.active {
@@ -97,18 +97,14 @@
 }
 .text-slide1 p{
     letter-spacing: 1px;
-    font-size: 23px;
+    font-size: 20px;
     color: #555555;
     text-align: start;
     line-height: 1.5;
 }
-.img-slide1 img{
-    width: 340px;
-    height: 400px;
 
-}
-.img-slide2, .img-slide3{
-    width: 780px;
+.img-slide2{
+    width: 700px;
     height: 400px;
 }
 .slider-button-left{
@@ -119,6 +115,7 @@
     border: none;
     color:lightgrey;
     opacity: 0.4;
+    cursor: pointer;
 }
 .slider-button-right{ 
     position: relative;
@@ -128,6 +125,7 @@
     top: 45%;
     color:lightgrey;
     opacity: 0.4;
+    cursor: pointer;
     
 }
 .modal2 .btn-close{

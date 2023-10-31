@@ -7,7 +7,7 @@ function LanguageButton() {
   return (
    
      <div  onClick={toggleLanguage} className='idioma'>
-     {language === 'es' ?  'Inglés' : 'Español' }
+     {language === 'es' ?  'English' : 'Español' }
  </div>
   );
 }

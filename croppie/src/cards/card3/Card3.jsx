@@ -45,12 +45,12 @@ const Card = () => {
                 <div className="slider-container">
                  
                   <div className={`slider-slide ${currentSlide === 1 ? 'active' : ''}`}>
-                  <div className='text-slide1'>
-                    <p>{language === 'es' ?  'propone recomendaciones y alertas sincronizadas con el calendario de manejo territorial en estos 10 momentos clave de la producción de café.' : 'The dashboard proposes recommendations and alerts synchronized with the local cropping calendars in  10 critical moments of coffee production.' }</p>
-                  </div>
-                  <div   className='text-slide1'>
-                  <p>{language === 'es' ?  'Identificar el potencial de mejora en cada ciclo es crucial para obtener un café de alta calidad, optimizar el rendimiento de la plantación, fomentar la resiliencia y la sostenibilidad de las prácticas.' : 'Identifying the potential for improvement in each cycle is crucial to obtain high quality coffee, improving plantation performance, and increasing the resilience and sustainability of practices.' }</p>
-                  </div>
+                      <div className='text-slide1'>
+                        <p>{language === 'es' ?  'propone recomendaciones y alertas sincronizadas con el calendario de manejo territorial en estos 10 momentos clave de la producción de café.' : 'The dashboard proposes recommendations and alerts synchronized with the local cropping calendars in  10 critical moments of coffee production.' }</p>
+                      </div>
+                      <div   className='text-slide1'>
+                      <p>{language === 'es' ?  'Identificar el potencial de mejora en cada ciclo es crucial para obtener un café de alta calidad, optimizar el rendimiento de la plantación, fomentar la resiliencia y la sostenibilidad de las prácticas.' : 'Identifying the potential for improvement in each cycle is crucial to obtain high quality coffee, improving plantation performance, and increasing the resilience and sustainability of practices.' }</p>
+                      </div>
                   </div>
                   <div className={`slider-slide ${currentSlide === 2 ? 'active' : ''}`}>
                   {language === 'es' ?  <img  className='img-slide2'  src="/illustrations/dashboardES.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="/illustrations/dashboardEN.svg" alt="dashboard-img" /> }
