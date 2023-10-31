@@ -41,3 +41,9 @@ a {
     text-decoration: none; /* Quitar subrayado de los enlaces */
     color: #333; /* Cambiar el color del texto de los enlaces si es necesario */
 }
+.seccionesMenu a.active {
+    font-weight: bold; /* Cambia a negrita */
+    color: #000; 
+    transition: all 0.3s;
+  }
+  

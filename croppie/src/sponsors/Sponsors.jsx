@@ -1,14 +1,12 @@
 import React from 'react'
 import './style.css'
-
-
+import { useLanguage } from '../LanguageContext';
 
 const Sponsors = () => {
-  
-  
+  const { language } = useLanguage();
   return (
-    <div className='containerAbout'>      
-      <h2>Financiadores</h2> 
+    <div className='containerAbou'>      
+      <h2>{language === 'es' ?  'Financiadores' : 'Sponsors' }</h2> 
         <section className='sectionSponsors' >
           <article>
             <div className='img-logo-sp'>

@@ -5,7 +5,7 @@
     justify-content: center;
     gap: 2%;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     width: 90%;
 }
 .containerWWA {
@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center;
     margin: 70px 0 ;
+   
 
     
 }
@@ -64,6 +65,6 @@
 
 .btn-pe{
     position: relative;
-    top: 35vh;
-    right: 2.5vw;
+    top: 28vh;
+    right: 1.8vw;
 }

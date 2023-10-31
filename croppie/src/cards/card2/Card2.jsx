@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-
+import { useLanguage } from '../../LanguageContext';
 import './style.css'
 
 const Card = () => {
+  const { language} = useLanguage();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(1);
 
@@ -40,26 +41,32 @@ const Card = () => {
             <button className='btn-close' onClick={closeModal}>
                 X            </button>
             <section className='modal-section'>
-                <h4 className='modal_title2'>Cómo  funciona</h4>
+                <h4 className='modal_title2'>{language === 'es' ?  '¿Cómo funciona?' : ' How it works?' }</h4>
                 <div className="slider-container">
       
       <div className={`slider-slide ${currentSlide === 1 ? 'active' : ''}`}>
        <div className='text-slide1'>
-        <p>Proporcionamos un sencillo protocolo de muestreo basado en una aplicación móvil que utiliza inteligencia artificial (IA) para realizar recuentos de cerezas de café y estimar el rendimiento en las parcelas de las fincas cafeteras.</p>
+        <p> {language === 'es' ?  'Proporcionamos un sencillo protocolo de muestreo basado en una aplicación móvil que utiliza inteligencia artificial (IA) para realizar recuentos de cerezas de café y estimar el rendimiento en las parcelas de las fincas cafeteras.' : 'We provide a simple mobile app-based sampling protocol which leverages artificial intelligence (AI) to count coffee cherries and estimate yield on coffee farm plots.' }</p>
        </div>
-       <div  className='img-slide1 spanish'>
-       <img  src="/steps/step1.svg" alt="step1-img" />
-       <img className='img-slide1 english' src="/steps/step1EN.svg" alt="step1-img" />
+       <div  className='img-slide1'>
+       {language === 'es' ?  
+        <img  src="/steps/step1.svg" alt="step1-img" />
+          :
+        <img src="/steps/step1EN.svg" alt="step1-img" /> }
        </div>      
-           
+      
       </div>
       <div className={`slider-slide ${currentSlide === 2 ? 'active' : ''}`}>
-      <img  className='img-slide2' src="/steps/step234ES.svg" alt="step234-img" />
-      <img  className='img-slide2 english' src="/steps/step234EN.svg" alt="step234-img" />
+      {language === 'es' ?   <img  className='img-slide2' src="/steps/step234ES.svg" alt="step234-img" />
+       :<img  className='img-slide2' src="/steps/step234EN.svg" alt="step234-img" /> }
+     
+
       </div>
       <div className={`slider-slide ${currentSlide === 3 ? 'active' : ''}`}>
-      <img  className='img-slide3'  src="/steps/calculation.svg" alt="step5-img" />
-      <img  className='img-slide3 english'  src="/steps/step5Yield.svg" alt="step5-img" />
+      {language === 'es' ?<img  className='img-slide3'  src="/steps/calculation.svg" alt="step5-img" />
+       : <img  className='img-slide3 '  src="/steps/step5Yield.svg" alt="step5-img" />}
+      
+     
       </div>
       <button className="slider-button-left" onClick={prevSlide}>
       <img src="/icons/prev.svg" alt="" />
@@ -75,11 +82,12 @@ const Card = () => {
       )}
     </div>
     <p className='card_title2'>
-    cómo funciona
+    {language === 'es' ?  '¿Cómo funciona?' : ' How it works?' }
+   
     </p>
 
     <span className='card_btn2' onClick={openModal}>
-      Ver más
+    {language === 'es' ?  ' Ver más' : 'View more' }
     </span>
 
   </div>

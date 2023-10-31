@@ -5,5 +5,9 @@
 
 }
 
+.App.EN h1.ES,
+.App.ES h1.EN {
+  display: none;
+}
 
 

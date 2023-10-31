@@ -1,20 +1,18 @@
 import React from 'react'
 import './style.css'
 import Colombia from './countries/Colombia'
-
+import { useLanguage } from '../LanguageContext';
 
 
 const WhereWeAre = () => {
+  const { language } = useLanguage();
   return (
     <section id="where-we-are" className='containerWWA'>
-       
         
-        <h2>Dónde estamos</h2>
+        <h2 > {language === 'es' ?  'Dónde estamos' : 'Where we are' }</h2>
   
         <div className='cards_container_col'><Colombia/></div>
-   
-   
-   
+
 
         <div className='containmap'>
     
@@ -29,6 +27,7 @@ const WhereWeAre = () => {
             <button  className='btn-hiden'>Uganda</button>
             <button>Uganda</button>
             <button  className='btn-hiden'>Uganda</button>
+            
         </div>
         </div>
 

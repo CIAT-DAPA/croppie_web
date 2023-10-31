@@ -82,12 +82,17 @@
     width: 35%;
 
 }
-.modal4_contain  img{
+.icons-conet{
     width: 100vh;
-    margin-top: 40%;
+    margin-top: 20%;
 }
 
 .modal2 .btn-close{
     font-size: 20px;
     color:lightgray;
 } 
+.icons-conet2{
+    width: 100vh;
+    margin-top: 10%;
+
+}

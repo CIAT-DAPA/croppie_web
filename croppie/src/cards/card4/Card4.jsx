@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './style.css'
+import { useLanguage } from '../../LanguageContext';
 
 const Card = () => {
+  const { language} = useLanguage();
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const openModal = () => {
@@ -24,11 +26,11 @@ const Card = () => {
               X   
             </button>
             <section className='modal-section'>
-                <h4 className='modal_title'>Casos de uso</h4>
+                <h4 className='modal_title'>{language === 'es' ?  'Casos de uso ' : 'Use cases' }</h4>
                 <section className='modal4_contain'>
                   <article className='contain_art1'>
-                  <img className='icons-conet' src="/illustrations/useCasesES.svg " alt="actors-img" />
-                  <img className='icons-conet english' src="/illustrations/useCasesEN.svg " alt="actors-img" />
+                  {language === 'es' ? <img className='icons-conet' src="/illustrations/useCasesES.svg " alt="actors-img" /> :<img className='icons-conet2' src="/illustrations/useCasesEN.svg " alt="actors-img" /> }
+                  
                   </article>
 
                 </section>
@@ -39,11 +41,12 @@ const Card = () => {
       )}
     </div>
     <p className='card_title'>
-    casos de uso
+    {language === 'es' ?  'Casos de uso ' : 'Use cases' }
     </p>
 
     <span className='card_btn' onClick={openModal}>
-      Ver más
+    <div className='space'>c</div>
+    {language === 'es' ?  ' Ver más' : 'View more' }
     </span>
 
   </div>

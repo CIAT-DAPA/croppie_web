@@ -1,32 +1,33 @@
-.containerAbout {
+.containerAbou {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0px 0 ; 
+   
 }
-.containerAbout h2{
+.containerAbou h2{
     color: #555555;
     font-size: 40px;
     align-items: center;    
 }
-.containerAbout .sectionSponsors {    
+.containerAbou .sectionSponsors {    
     display: flex;
     justify-content: space-between;
    
 }
-.containerAbout  .sectionSponsors article{
+.containerAbou  .sectionSponsors article{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin:  0px 1.3em; 
 }
-.containerAbout .sectionSponsors article .img-logo-sp img{
+.containerAbou .sectionSponsors article .img-logo-sp img{
    width: 200px;
   
 }
-.containerAbout article img{
+.containerAbou article img{
     width: 25vw;    
 }
 

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './style.css'
+import { useLanguage } from '../../LanguageContext';
 
 const Card = () => {
+  const { language} = useLanguage();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(1);
 
@@ -39,20 +41,20 @@ const Card = () => {
              X
             </button>
             <section className='modal-section'>
-              <h4 className='modal_title'>Tablero de instrumentos</h4>
+              <h4 className='modal_title'>{language === 'es' ?  'Tablero de instrumentos' : 'Dashboard ' }</h4>
                 <div className="slider-container">
                  
                   <div className={`slider-slide ${currentSlide === 1 ? 'active' : ''}`}>
                   <div className='text-slide1'>
-                    <p>El tablero de instrumentos propone recomendaciones y alertas sincronizadas con el calendario de manejo territorial en estos 10 momentos clave de la producción de café.</p>
+                    <p>{language === 'es' ?  'propone recomendaciones y alertas sincronizadas con el calendario de manejo territorial en estos 10 momentos clave de la producción de café.' : 'The dashboard proposes recommendations and alerts synchronized with the local cropping calendars in  10 critical moments of coffee production.' }</p>
                   </div>
                   <div   className='text-slide1'>
-                  <p>Identificar el potencial de mejora en cada ciclo es crucial para obtener un café de alta calidad, optimizar el rendimiento de la plantación, fomentar la resiliencia y la sostenibilidad de las prácticas</p>
+                  <p>{language === 'es' ?  'Identificar el potencial de mejora en cada ciclo es crucial para obtener un café de alta calidad, optimizar el rendimiento de la plantación, fomentar la resiliencia y la sostenibilidad de las prácticas.' : 'Identifying the potential for improvement in each cycle is crucial to obtain high quality coffee, improving plantation performance, and increasing the resilience and sustainability of practices.' }</p>
                   </div>
                   </div>
                   <div className={`slider-slide ${currentSlide === 2 ? 'active' : ''}`}>
-                  <img  className='img-slide2'  src="/illustrations/dashboardES.svg" alt="dashboard-img" />
-                  <img  className='img-slide2 english'  src="/illustrations/dashboardEN.svg" alt="dashboard-img" />
+                  {language === 'es' ?  <img  className='img-slide2'  src="/illustrations/dashboardES.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="/illustrations/dashboardEN.svg" alt="dashboard-img" /> }
+                
                   </div>
                   <button className="slider-button-left" onClick={prevSlide}>
                     <img src="/icons/prev.svg" alt="" />
@@ -66,12 +68,13 @@ const Card = () => {
       )}
     </div>
     <p className='card_title'>
-    dashboard
+    {language === 'es' ?  'Tablero de instrumentos' : 'Dashboard ' }
     </p>
 
     <span className='card_btn' onClick={openModal}>
       <div className='space'>c</div>
-      Ver más
+     
+      {language === 'es' ?  ' Ver más' : 'View more' }
     </span>
 
   </div>

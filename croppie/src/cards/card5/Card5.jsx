@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './style.css'
+import { useLanguage } from '../../LanguageContext';
 
 const Card = () => {
+  const { language} = useLanguage();
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const openModal = () => {
@@ -28,26 +30,26 @@ const Card = () => {
                   <article>
                     <div>
                       <img src="/icons/coffeeSeed.svg" alt="coffeSeed" />
-                      <p>Conjunto de datos fotográficos de entrenamiento de cerezas etiquetadas</p>
+                      <p>{language === 'es' ?  'Conjunto de datos fotográficos de entrenamiento de cerezas etiquetadas.' : 'Photo training data set of labelled cherries' }</p>
                     </div>
                     <div>
                     <img src="/icons/coffeeSeed.svg" alt="coffeSeed" />
-                      <p>Modelo de IA entrenado y validado</p>
+                      <p>{language === 'es' ?  'Modelo de IA entrenado y validado.' : 'Trained and validated AI model' }</p>
                     </div>
                     <div>
                     <img src="/icons/coffeeSeed.svg" alt="coffeSeed" />
-                      <p>  Publicaciones científicas y técnicas</p>
+                      <p>{language === 'es' ?  ' Publicaciones científicas y técnicas.' : 'Scientific and Technical Publications' }</p>
                     </div>                   
                   </article>
 
                   <article >
                     <div>
                     <img src="/icons/coffeeSeed.svg" alt="coffeSeed" />
-                      <p>2200 agricultores que reciben asesoramiento digital</p>
+                      <p>{language === 'es' ?  '2200 agricultores que reciben asesoramiento digital.' : '2200 farmers received digital advisory.' }</p>
                     </div>
                     <div>
                     <img src="/icons/coffeeSeed.svg" alt="coffeSeed" />
-                      <p> API para terceros</p>
+                      <p> {language === 'es' ?  'API para terceros.' : 'API for external access and collaboration.' }</p>
                     </div>
                     <div>
                     </div>
@@ -65,7 +67,7 @@ const Card = () => {
 
     <span className='card_btn' onClick={openModal} >
       <div className='space'>  c </div>
-      Ver más
+      {language === 'es' ?  ' Ver más' : 'View more' }
     </span>
 
   </div>

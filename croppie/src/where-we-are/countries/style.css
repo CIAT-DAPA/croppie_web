@@ -101,6 +101,7 @@
     border: none;
     color:lightgrey;
     opacity: 0.4;
+    cursor:pointer;
 }
 .slider-button-right-pe{ 
     position: relative;
@@ -110,6 +111,7 @@
     top: 55%;
     color:lightgrey;
     opacity: 0.4;
+    cursor:pointer;
     
 }
 .btn-close-pe{
@@ -118,14 +120,15 @@
     border: none;
     justify-content: right;
     font-size: 20px;
-    color:lightgray;
+    cursor: pointer;
+    background-color: transparent;
 } 
 
 .btn-country-col{
     z-index: initial;
     position:relative;
     right: 200%;
-    top: 55vh;
+    top: 42vh;
     width: 180px;
     padding: 15px;
     border-radius: 10px;
