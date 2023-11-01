@@ -62,3 +62,8 @@
     color: #FEFEFF;
     font-size: 22px;
 }
+@media (max-width: 767px) {
+    .containerNews{
+        border: solid 1px red;
+    }
+}

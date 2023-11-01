@@ -11,7 +11,7 @@ const Banner = () => {
                 {language === 'es' ?  ' Estimado de rendimiento  asistido por IA' : 'AI-assisted coffee yield estimation' }
                 
             </h2>
-            <p className='banner_containTex2'>
+            <p className='banner_containTex2 '>
             {language === 'es' ?  ' Croppie es una aplicación móvil diseñada para ayudar a los pequeños caficultores en sus decisiones clave.' : '     Croppie is a mobile app designed to support decision making of smallholder coffee producers.' }
             </p>
         </div>

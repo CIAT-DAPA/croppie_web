@@ -24,17 +24,20 @@
     margin:  0px 1.3em; 
 }
 .containerAbou .sectionSponsors article .img-logo-sp img{
-   width: 200px;
-  
+    width: 200px;
 }
 .containerAbou article img{
     width: 25vw;    
 }
-
-
 .sectionSponsors{
     
     display: flex;
     justify-content: center;  
 
+}
+@media (max-width: 767px) {
+    .sectionSponsors{
+        flex-wrap: wrap;
+        border: solid 1px red;
+    }
 }

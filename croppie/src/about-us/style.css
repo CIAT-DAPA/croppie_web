@@ -85,9 +85,13 @@
 .containerAbout .sectionSponsors article .img-logo-sp img{
     width: 200px;
 }
-/* .containerAbout article img{
-    width: 25vw;    
-} */
+
 .logoCiat{
     width: 300px;
+}
+@media (max-width: 767px) {
+    .articles{
+        flex-wrap: wrap;
+        border: solid 1px red;
+    }
 }

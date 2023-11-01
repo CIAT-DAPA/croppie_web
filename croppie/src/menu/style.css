@@ -23,7 +23,6 @@
 .seccionesMenu{
     display: flex;
     width: 700px;
-   /*border: 1px red solid;*/
     justify-content: space-around;
     text-transform: uppercase;
 }
@@ -33,17 +32,47 @@
     padding: 8px;
     letter-spacing: 2px;
     cursor: pointer;
+    
+    background-color: #fff;
+    transition: background-color 0.4s, color 0.3s;
+}
+.idioma:hover {
+    background-color: #3d3d3d;
+    color: #fff;
 }
 ul {
-    list-style: none; /* Quitar viñetas de las listas desordenadas */
+    list-style: none;
 }
 a {
-    text-decoration: none; /* Quitar subrayado de los enlaces */
-    color: #333; /* Cambiar el color del texto de los enlaces si es necesario */
+    text-decoration: none; 
+    color: #333; 
+}
+a:hover{
+    font-weight: bold;
 }
 .seccionesMenu a.active {
     font-weight: bold; /* Cambia a negrita */
     color: #000; 
     transition: all 0.3s;
-  }
-  
+}
+.desktop{
+    display: none;
+}
+@media (max-width: 767px) {
+    .mobile {
+        display: none;
+
+    }
+    .desktop{
+        display: block;
+    }
+    .menu{
+        border: solid 1px red;
+        width: 97%;
+    }
+    .menuHamburguer{
+        width: 50px;
+        height: 30px;
+
+    }
+}

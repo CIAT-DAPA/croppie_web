@@ -38,7 +38,7 @@ function Menu() {
   return (
     <div className='menu'>
       <img src="/logos/logoBorder.svg" className="logoCroppie" alt="logo croppie" />
-      <ul className='seccionesMenu'>
+      <ul className='seccionesMenu mobile'>
         <li>
           <a
             href="#banner"
@@ -85,6 +85,7 @@ function Menu() {
           </a>
         </li>
       </ul>
+      <img className='desktop menuHamburguer' src="/logos/menuHamburguer.svg" alt="" />
       <LanguageButton />
     </div>
   );

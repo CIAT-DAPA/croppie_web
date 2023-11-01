@@ -85,7 +85,7 @@
     font-size: 24px;
     position: absolute;
     transition: transform 0.5s;
-    transform: translateX(100%);
+    transform: translateY(100%);
 }
 
 .slider-slide.active {

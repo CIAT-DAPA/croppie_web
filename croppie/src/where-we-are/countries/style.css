@@ -105,6 +105,7 @@
     color:lightgrey;
     opacity: 0.4;
     cursor:pointer;
+    transform: rotate(90deg);
 }
 .slider-button-right-pe{ 
     position: relative;
@@ -115,6 +116,7 @@
     color:lightgrey;
     opacity: 0.4;
     cursor:pointer;
+    transform: rotate(90deg);
     
 }
 .btn-close-pe{

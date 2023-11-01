@@ -21,3 +21,9 @@
     margin-bottom: 60px;
     
 }
+@media (max-width: 767px) {
+    .cards_container{
+        flex-wrap: wrap;
+        border: solid 1px red;
+    }
+}

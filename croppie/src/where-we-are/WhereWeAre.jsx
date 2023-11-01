@@ -17,6 +17,9 @@ const WhereWeAre = () => {
         <div className='containmap'>
     
         <div className='containmap_btn'>
+        
+              <img className='desktop' src="/illustrations/mapa-wwa.svg" alt="" />
+           
 
         <div>
             <button className='btn-pe'> Perú</button>

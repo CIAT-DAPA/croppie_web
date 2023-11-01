@@ -62,9 +62,28 @@
     visibility: hidden;
 
 }
+.desktop{
+    display: none;
+}
 
 .btn-pe{
     position: relative;
     top: 28vh;
     right: 1.8vw;
+}
+@media (max-width: 767px) {
+    .containmap{
+    width: 360px;
+    }
+    .containmap_btn{
+        border: solid 1px red;
+        background-color: white;
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .desktop{
+        display: block;
+    }
 }
