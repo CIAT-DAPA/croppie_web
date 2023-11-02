@@ -68,7 +68,7 @@
 
 .btn-pe{
     position: relative;
-    top: 28vh;
+    top: 32vh;
     right: 1.8vw;
 }
 @media (max-width: 767px) {
@@ -88,7 +88,7 @@
     }
 }
 
-@media screen and (min-width: 1920px) and (min-height: 1080px) {
+@media screen and (min-height: 700px) {
     .btn-pe{
         position: relative;
         top: 210px;
