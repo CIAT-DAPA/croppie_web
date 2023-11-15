@@ -141,3 +141,41 @@
 .space{
 color: transparent;
 }
+@media (max-width: 767px) {
+    .space{
+        display: none;
+    }
+    .card_container{
+        width: 340px;
+        height: 130px;
+        gap: 0;
+    }
+    .modal {
+        width: 95%;
+        height: 100%;
+    }
+
+    .slider-container {
+        width: 340px;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        border: solid 1px red;
+    
+    }
+    .modal-section1MB{
+        width: 340px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+
+    }
+    .modal_title {
+        font-size: 30px;
+        margin: 0;
+        justify-content: center;
+    }
+
+}

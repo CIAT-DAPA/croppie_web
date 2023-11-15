@@ -39,5 +39,21 @@
     .sectionSponsors{
         flex-wrap: wrap;
         border: solid 1px red;
+        
+    }
+    .containerAbou .sectionSponsors {
+        justify-content: center;
+        gap: 30px;
+    }
+    .containerAbou .sectionSponsors article .img-logo-sp img {
+        width: 150px;
+    }
+    .containerAbou .sectionSponsors article {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        width: 150px;
     }
 }

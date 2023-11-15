@@ -94,4 +94,37 @@
         flex-wrap: wrap;
         border: solid 1px red;
     }
+    .containerAbout article div .text {
+        font-size: 19px;
+        align-self: flex-start;
+        letter-spacing: 2px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .containerAbout article div {
+        max-width: 100%;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        letter-spacing: 1px;
+        color: #555555;
+        height: 50%;
+    }
+    .containerAbout article .img-logo {
+        width: 250px;
+    }
+    .logoCiat {
+        width: 250px;
+    }
+    .containerAbout article {
+        max-width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    
 }

@@ -13,26 +13,22 @@ const WhereWeAre = () => {
   
         <div className='cards_container_col'><Colombia/></div>
 
-
         <div className='containmap'>
     
-        <div className='containmap_btn'>
-        
+          <div className='containmap_btn'>
               <img className='desktop' src="/illustrations/mapa-wwa.svg" alt="" />
-           
+              <div>
+                  <button className='btn-pe'> Perú</button>
+              </div>
+              <div >
 
-        <div>
-            <button className='btn-pe'> Perú</button>
-        </div>
-        <div >
-
-            <button  className='btn-hiden'>Uganda</button>
-            <button  className='btn-hiden'>Uganda</button>
-            <button>Uganda</button>
-            <button  className='btn-hiden'>Uganda</button>
-            
-        </div>
-        </div>
+                  <button  className='btn-hiden'>Uganda</button>
+                  <button  className='btn-hiden'>Uganda</button>
+                  <button>Uganda</button>
+                  <button  className='btn-hiden'>Uganda</button>
+                  
+              </div>
+          </div>
 
       </div>
      

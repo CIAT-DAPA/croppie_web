@@ -138,3 +138,11 @@
     opacity: 0.4;
     
 }
+@media (max-width: 767px) {
+    .card_container2{
+        width: 340px;
+        height: 130px;
+        gap: 0;
+    }
+
+}

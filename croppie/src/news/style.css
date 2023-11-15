@@ -66,4 +66,7 @@
     .containerNews{
         border: solid 1px red;
     }
+    .newsmb{
+        display: none;
+    }
 }
