@@ -43,9 +43,15 @@
 }
 @media (max-width: 767px) {
     .containerFooter {
-        border: solid 1px red;
         padding: 0;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    .containerFooter_One {
+        align-items: center;
+    }
+    .footermb{
+        display: none;
     }
     
 }

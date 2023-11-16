@@ -92,7 +92,6 @@
 @media (max-width: 767px) {
     .articles{
         flex-wrap: wrap;
-        border: solid 1px red;
     }
     .containerAbout article div .text {
         font-size: 19px;

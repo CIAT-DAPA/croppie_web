@@ -52,7 +52,6 @@
 @media (max-width: 767px) {
 
   .banner{
-    border: solid 1px red;
     background-image: url('/background/BannerImgMobil.svg');
     height: auto;
     flex-direction: column;

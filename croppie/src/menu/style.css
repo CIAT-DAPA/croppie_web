@@ -67,8 +67,7 @@ a:hover{
         display: block;
     }
     .menu{
-        border: solid 1px red;
-        width: 97%;
+        width: 100%;
     }
     .menuHamburguer{
         width: 50px;

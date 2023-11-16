@@ -137,6 +137,10 @@
     font-size: 20px;
     color:lightgray;
 } 
+.card3dt{
+    display: none;
+
+}
 
 .space{
 color: transparent;
@@ -154,13 +158,19 @@ color: transparent;
         width: 95%;
         height: 100%;
     }
+    .card3mb{
+        display: none;
+    }
+    .card3dt{
+        display: block;
+    
+    }
 
     .slider-container {
         width: 340px;
         height: 100%;
         overflow: hidden;
         position: relative;
-        border: solid 1px red;
     
     }
     .modal-section1MB{
@@ -176,6 +186,16 @@ color: transparent;
         font-size: 30px;
         margin: 0;
         justify-content: center;
+    }
+    .text-slide1 {
+        width: 250px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+    }
+    .img-slide2 {
+        width: 290px;
+        height: 400px;
     }
 
 }

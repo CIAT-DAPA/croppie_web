@@ -138,11 +138,25 @@
     opacity: 0.4;
     
 }
+.card2dt{
+    display: none;
+}
 @media (max-width: 767px) {
     .card_container2{
         width: 340px;
         height: 130px;
         gap: 0;
+    }
+    .card2mb{
+        display: none;
+
+    }
+    .card2dt{
+        display: block;
+    }
+    .modal2{
+        width: 95%;
+        height: 100%;
     }
 
 }
