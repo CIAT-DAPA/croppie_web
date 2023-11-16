@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './style.css';
 import { useLanguage } from '../LanguageContext';
 import LanguageButton from '../btn-language/LanguageButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Menu() {
   const { language } = useLanguage();
   const [activeSection, setActiveSection] = useState('banner');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleScroll = () => {
     const sections = document.querySelectorAll('section');
@@ -26,6 +29,11 @@ function Menu() {
       // Establecer un breve retraso para actualizar la clase activa
       setTimeout(() => setActiveSection(sectionId), 100);
     }
+    setMenuOpen(false); // Cerrar el menú después de hacer clic en un enlace
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   useEffect(() => {
@@ -85,8 +93,42 @@ function Menu() {
           </a>
         </li>
       </ul>
-      <img className='desktop menuHamburguer' src="/logos/menuHamburguer.svg" alt="" />
       <LanguageButton />
+      {/* Icono de hamburguesa para dispositivos de escritorio */}
+      <FontAwesomeIcon className='desktop menuHamburguer' icon={faBars} onClick={toggleMenu} />
+
+      {/* Menú hamburguesa para dispositivos móviles */}
+      {menuOpen && (
+        <div className="mobile-menu">
+          <ul>
+            <li>
+              <a href="#banner" onClick={() => handleLinkClick('banner')}>
+                {language === 'en' ? 'Home' : 'Inicio'}
+              </a>
+            </li>
+            <li>
+              <a href="#cards" onClick={() => handleLinkClick('cards')}>
+                Croppie
+              </a>
+            </li>
+            <li>
+              <a href="#about-us" onClick={() => handleLinkClick('about-us')}>
+                {language === 'en' ? 'About us' : 'Quienes somos'}
+              </a>
+            </li>
+            <li>
+              <a href="#where-we-are" onClick={() => handleLinkClick('where-we-are')}>
+                {language === 'en' ? 'Where we are' : 'Donde estamos'}
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={() => handleLinkClick('contact')}>
+                {language === 'en' ? 'Contact' : 'Contacto'}
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

@@ -36,7 +36,6 @@ const Colombia = () => {
     <div>
       {isModalVisible && (
         <div className='modal_pe'>
-            {/* Contenido del modal este deberia pasarse por props */}
             <button className='btn-close-pe' onClick={closeModal}>
              X
             </button>
@@ -57,11 +56,12 @@ const Colombia = () => {
                   <div className={`slider-slide-pe ${currentSlide === 2 ? 'active' : ''}`}>
                   <div className='text-slide1_pe'>
                   <h3>{language === 'es' ?  ' Colombia: caficultoras del departamento del Quindío' : ' Colombia: Coffee Farmers from Quindío'}</h3>
-                    <p>{language === 'es' ?  'En Croppie participan 250 caficultores, todos ubicados geográficamente, en el municipio de Génova, un municipio caficultor cuya actividad cafetera se concentra entre los 1700 a 1850 msnm, siendo el primer municipio caficultor en el departamento de Quindío. De los 250 productores, 184 son mujeres y 66 son hombres, principalmente las mujeres caficultoras hacen parte de la Asociación Aromas del Campo, hoy con marca propia registrada como Asociación de Chapoleras del municipio de Génova en el departamento de Quindío.' : 'Nowadays, 250 coffee farmers participate in Croppie, all geographically located in Génova. This is the first coffee-growing municipality in the department of Quindío, since its coffee activities are concentrated between 1,700 and 1,800 meters above sea level.Of the 250 coffee producers, 184 are women and 66 are men. Mainly, women coffee farmers are part of the Aromas del Campo Association, an organization with its own brand registered as the Association of Chapoleras of the municipality of Génova, in the department of Quindío.'}
-                   </p>
+                  <p>{language === 'es' ?  ' Los caficultores en su mayoría se encuentran en un rango etario entre los 46 y 55 años de edad, con un nivel de educación en su mayoría de primaria completa.' : 'The majority of coffee farmers are in the age range between 46 and 55 years old, and their educational level is, for the most part, completed primary school.' }</p>
+                 
                   </div>
                   <div   className='text-slide1_pe'>
-                  <p>{language === 'es' ?  ' Los caficultores en su mayoría se encuentran en un rango etario entre los 46 y 55 años de edad, con un nivel de educación en su mayoría de primaria completa.' : 'The majority of coffee farmers are in the age range between 46 and 55 years old, and their educational level is, for the most part, completed primary school.' }</p>
+                  <p>{language === 'es' ?  'En Croppie participan 250 caficultores, todos ubicados geográficamente, en el municipio de Génova, un municipio caficultor cuya actividad cafetera se concentra entre los 1700 a 1850 msnm, siendo el primer municipio caficultor en el departamento de Quindío. De los 250 productores, 184 son mujeres y 66 son hombres, principalmente las mujeres caficultoras hacen parte de la Asociación Aromas del Campo, hoy con marca propia registrada como Asociación de Chapoleras del municipio de Génova en el departamento de Quindío.' : 'Nowadays, 250 coffee farmers participate in Croppie, all geographically located in Génova. This is the first coffee-growing municipality in the department of Quindío, since its coffee activities are concentrated between 1,700 and 1,800 meters above sea level.Of the 250 coffee producers, 184 are women and 66 are men. Mainly, women coffee farmers are part of the Aromas del Campo Association, an organization with its own brand registered as the Association of Chapoleras of the municipality of Génova, in the department of Quindío.'}
+                   </p>
                   </div>
                   </div>
                   <button className="slider-button-left-pe" onClick={prevSlide}>
