@@ -95,6 +95,17 @@
     text-align: justify;
     line-height: 1.5;
 }
+.UgandaTitle{
+    font-size: 16px;
+}
+.text-slide1_pe p.uganda {
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #555555;
+    text-align: justify;
+    line-height: 1.5;
+}
 
 
 .slider-button-left-pe{
@@ -146,7 +157,32 @@
     text-transform: uppercase;
     cursor: pointer;
 }
+.btn-country-col:hover{
+    background-color: white;
+    color: #3D5449;
+    border: 1px solid gray;
+    font-weight: bold;
+}
+.noneUM{
+    display: none;
+
+}
 @media (max-width: 767px) {
+    .noneU{
+        display: none;
+
+    }
+    .noneUM{
+        display: block;
+    }
+    .text-slide1_pe p.uganda {
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        font-size: 12px;
+        color: #555555;
+        text-align: justify;
+        line-height: 1.5;
+    }
  
 .slider-button-right-pe {
     position: relative;

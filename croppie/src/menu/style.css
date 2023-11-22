@@ -79,13 +79,17 @@ a:hover{
     }
     ul {
         list-style: none;
-        border: 1px solid red;
+        border: 1px solid gray;
         position: absolute;
+        padding-right: 35px;
         right: 0%;
         height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        align-items: flex-end;
         background-color: white;
+        top: 75px;
+        width: 150px;
     }
 }

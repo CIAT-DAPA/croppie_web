@@ -23,6 +23,10 @@
     flex-direction: column;
     margin:  0px 1.3em; 
 }
+.containerAbou  .sectionSponsors article:hover{
+    border-bottom: 3px solid gray;
+
+}
 .containerAbou .sectionSponsors article .img-logo-sp img{
     width: 200px;
 }

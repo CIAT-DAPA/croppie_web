@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import Colombia from './countries/Colombia'
+import Uganda from './countries/Uganda'
 import { useLanguage } from '../LanguageContext';
 
 
@@ -23,7 +24,7 @@ const WhereWeAre = () => {
               <div className='containerbtn-countries' >
                   <button  className='btn-hiden'>Uganda</button>
                   <button  className='btn-hiden'>Uganda</button>
-                  <button className='btn-countries'> Uganda</button>
+                  <Uganda />
                   <button  className='btn-hiden'>Uganda</button>
                   
               </div>

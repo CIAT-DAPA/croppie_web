@@ -27,6 +27,9 @@
     flex-direction: column;
     margin:  0px 3em; 
 }
+.containerAbout article:hover{
+    border-bottom: 3px solid gray;
+}
 .containerAbout article .img-logo{
     max-width: 100%;
     height: 30%;    

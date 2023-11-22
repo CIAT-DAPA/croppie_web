@@ -57,6 +57,13 @@
     text-transform: uppercase;
     cursor: pointer;
 }
+.btn-countries:hover{
+    background-color: white;
+    color: #3D5449;
+    border: 1px solid gray;
+    font-weight: bold;
+}
+
 .btn-hiden{
     visibility: hidden;
 
