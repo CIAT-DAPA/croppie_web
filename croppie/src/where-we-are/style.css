@@ -1,0 +1,103 @@
+
+.cards_container_col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    position: relative;
+    margin-bottom: 0px;
+    width: 90%;
+}
+.containerWWA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0 ;   
+}
+.containerWWA h2{
+    color: #555555;
+    font-size: 40px;
+    
+}
+.containmap{
+    background-image: url('/illustrations/mapa-wwa.svg'); 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+    width: 970px;
+    height: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.containmap_btn {
+    width: 850px;
+    display: flex;
+    gap: 350px;
+}
+.containerbtn-countries {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 60px 0 0 0;
+}
+
+.btn-countries{
+    width: 180px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3D5449;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-countries:hover{
+    background-color: white;
+    color: #3D5449;
+    border: 1px solid gray;
+    font-weight: bold;
+}
+
+.btn-hiden{
+    visibility: hidden;
+
+}
+.desktop{
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .btn-countries{
+        width: 250px;
+    }
+    .containmap{
+    width: 360px;
+    }
+    .containmap_btn{
+        background-color: white;
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .desktop{
+        display: block;
+    }
+    .containerbtn-countries {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+    .btn-hiden{
+        display: none;
+    }
+}

@@ -1,24 +1,32 @@
 .banner {
-    width: 100%;
-    margin-top: 80px;
-    margin-bottom: 30px;    height: calc(100vh - 80px);/* Calcula el alto restando la altura del menú */
-    background-image: url('/background/BannerImage.svg'); /* Agrega la imagen de fondo */
+    background-image: url('/background/BannerImage.svg');
     background-repeat: no-repeat;
-    background-position: center; /* Centra la imagen en el banner */
+    background-position: center; 
     background-size: contain;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    /* border: solid 1px #000; */
-  
+    justify-content: space-between;
+ 
+
+}
+.banner_contain{
+    margin-left: 5%;
+    width: 70%;
+    align-self:center;
+    justify-content: start;
 }
 .banner_containTex1{
-    font-size: 52px;
+   /* position: absolute;
+    left: 10%;
+    top:30%;
+    /* right:40%; */
+    font-size: 51px; 
     color: #fff;
-    width: 80%;
+    width: 60%;
     text-align: start;
 }
-.banner_containTex2{
+.banner_containTex2{ 
     font-size: 21px; 
     color: #fff;
     width: 55%;
@@ -26,13 +34,48 @@
 
 }
 .banner_button{
+    position: absolute;
+    right:5%;
     background-color: #FEFEFF;
     color: #555555;
-    padding: 25px 40px;
+    padding: 25px 50px;
     font-size: 16px;
-    border-radius: 10px;
-    border: none;
+    border-radius: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    border: 2px solid rgb(26, 38, 26);
     cursor: pointer;
+}
+
+
+
+@media (max-width: 767px) {
+
+  .banner{
+    background-image: url('/background/BannerImgMobil.svg');
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20%;
+  }
+  .banner_containTex1{
+    /* visibility: hidden; */
+    display: none;
+  }
+  .banner_button{
+    padding:20px 30px;
+    padding-right: 30px;
+    font-size: 14px;
+    right: 25%;
+    position: static;
+  }
+  .banner_containTex2{ 
+    font-size: 28px; 
+    width: 100%;
+  }
+  .banner_contain{
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+
 }
