@@ -38,8 +38,7 @@
     right:5%;
     background-color: #FEFEFF;
     color: #555555;
-    padding: 25px 40px;
-    padding-right: 50px;
+    padding: 25px 50px;
     font-size: 16px;
     border-radius: 15px;
     text-transform: uppercase;
@@ -53,11 +52,30 @@
 @media (max-width: 767px) {
 
   .banner{
-    border: solid 1px red;
     background-image: url('/background/BannerImgMobil.svg');
     height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20%;
   }
   .banner_containTex1{
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
   }
+  .banner_button{
+    padding:20px 30px;
+    padding-right: 30px;
+    font-size: 14px;
+    right: 25%;
+    position: static;
+  }
+  .banner_containTex2{ 
+    font-size: 28px; 
+    width: 100%;
+  }
+  .banner_contain{
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+
 }

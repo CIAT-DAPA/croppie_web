@@ -64,6 +64,27 @@
 }
 @media (max-width: 767px) {
     .containerNews{
-        border: solid 1px red;
+        height: auto;
+    }
+    .newsmb{
+        display: none;
+    }
+    .contaiNews div {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }   
+    .contaiNews div h3 {
+        font-size: 40px;
+        color: #FEFEFF;
+    }
+    .containerNews h2 {
+        color: #555555;
+        font-size: 30px;
+    }
+    .contaiNews {
+        height: auto;
     }
 }

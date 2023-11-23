@@ -16,14 +16,14 @@ const Footer = () => {
            </div>
             <small>© 2023. All rights reserved.</small>
         </div>
-        <div className='containerFooter_Tow'>
+        <div className='containerFooter_Tow footermb'>
             <span className='footerTitle'>Menú</span>
             <span><a href="#banner">{language === 'en' ? 'Home' : 'Inicio'}</a></span>
             <span><a href="#cards">Croppie</a></span>
             <span><a href="#about-us">{language === 'en' ? 'About us' : 'Quienes somos'}</a></span>
             <span><a href="#where-we-are">{language === 'en' ? 'Where we are' : 'Donde estamos'}</a></span>
         </div>
-        <div className='containerFooter_Three'>
+        <div className='containerFooter_Three footermb'>
             <span className='footerTitle'> {language === 'es' ?  'Quiénes somos' : ' About us' }</span>
             <span><a href='https://alliancebioversityciat.org/es' target="_blank">CIAT</a></span>
             <span><a href='https://tecnicafe.co/' target="_blank">Tecnicafé</a></span>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import Colombia from './countries/Colombia'
+import Uganda from './countries/Uganda'
 import { useLanguage } from '../LanguageContext';
 
 
@@ -11,28 +12,23 @@ const WhereWeAre = () => {
         
         <h2 > {language === 'es' ?  'Dónde estamos' : 'Where we are' }</h2>
   
-        <div className='cards_container_col'><Colombia/></div>
-
 
         <div className='containmap'>
     
-        <div className='containmap_btn'>
-        
+          <div className='containmap_btn'>
               <img className='desktop' src="/illustrations/mapa-wwa.svg" alt="" />
-           
-
-        <div>
-            <button className='btn-pe'> Perú</button>
-        </div>
-        <div >
-
-            <button  className='btn-hiden'>Uganda</button>
-            <button  className='btn-hiden'>Uganda</button>
-            <button>Uganda</button>
-            <button  className='btn-hiden'>Uganda</button>
-            
-        </div>
-        </div>
+              <div className='containerbtn-countries' >
+                  <Colombia />
+                  <button className='btn-countries'> Perú</button>
+              </div>
+              <div className='containerbtn-countries' >
+                  <button  className='btn-hiden'>Uganda</button>
+                  <button  className='btn-hiden'>Uganda</button>
+                  <Uganda />
+                  <button  className='btn-hiden'>Uganda</button>
+                  
+              </div>
+          </div>
 
       </div>
      
