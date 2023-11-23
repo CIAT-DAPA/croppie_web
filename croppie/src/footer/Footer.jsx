@@ -33,15 +33,8 @@ const Footer = () => {
         <div className='containerFooter_Three'>
             <span className='footerTitle'>{language === 'en' ? 'Contact' : 'Contacto'}</span>
             <span>Romain Gauteon
-                nombre@ciat.org
-                (+57)3238494
+            r.gautron@cgiar.org
             </span>
-            <span>
-                Comunicaciones Ciat
-                comunicaciones@ciat-org
-                (+57)3238494
-            </span>
-            <span></span>
         </div>
     </section>
   )

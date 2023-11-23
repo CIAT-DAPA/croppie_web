@@ -10,7 +10,7 @@ const Sponsors = () => {
         <section className='sectionSponsors' >
           <article>
             <div className='img-logo-sp'>
-              <a href="https://www.cgiar.org/" target="_blank"><img src="/logos/logoCgiarBigData.png" alt="logo-cgiar" /></a>
+              <a href="https://bigdata.cgiar.org/" target="_blank"><img src="/logos/logoCgiarBigData.png" alt="logo-cgiar-bigdata" /></a>
             </div> 
           </article>
           <article>
@@ -30,7 +30,7 @@ const Sponsors = () => {
           </article>
           <article>
             <div className='img-logo-sp'>
-              <a href="https://www.cgiar.org/" target="_blank"><img src="/logos/logoEiA.png" alt="logo-eia" /></a>
+              <a href="https://eia.cgiar.org/" target="_blank"><img src="/logos/logoEiA.png" alt="logo-eia" /></a>
             </div> 
           </article>
       </section>    

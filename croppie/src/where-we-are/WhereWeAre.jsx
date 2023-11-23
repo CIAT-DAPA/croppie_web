@@ -19,7 +19,7 @@ const WhereWeAre = () => {
               <img className='desktop' src="/illustrations/mapa-wwa.svg" alt="" />
               <div className='containerbtn-countries' >
                   <Colombia />
-                  <button className='btn-countries'> Perú</button>
+                  <button className='btn-countries'>{language === 'es' ?  ' Perú' : ' Peru' }</button>
               </div>
               <div className='containerbtn-countries' >
                   <button  className='btn-hiden'>Uganda</button>
