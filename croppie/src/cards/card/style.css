@@ -13,6 +13,12 @@
     justify-content: center;
     align-items: center;
     gap: 90px;
+    cursor: pointer;
+}
+.card_container:hover{
+    -webkit-box-shadow: -3px 1px 19px 0px rgba(125,124,125,1);
+-moz-box-shadow: -3px 1px 19px 0px rgba(125,124,125,1);
+box-shadow: -3px 1px 19px 0px rgba(125,124,125,1);
 }
 .card_title{
     font-size: 22px;
@@ -24,6 +30,9 @@
 .card_btn{
     font-size: 22px;
     cursor: pointer;
+}
+.card_btn:hover{
+    border-bottom: 1px solid white;
 }
 
 .modal {

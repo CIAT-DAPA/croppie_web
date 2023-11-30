@@ -2,6 +2,7 @@ import React from 'react'
 import './style.css'
 import Colombia from './countries/Colombia'
 import Uganda from './countries/Uganda'
+import Peru from './countries/Peru'
 import { useLanguage } from '../LanguageContext';
 
 
@@ -19,7 +20,7 @@ const WhereWeAre = () => {
               <img className='desktop' src="/illustrations/mapa-wwa.svg" alt="" />
               <div className='containerbtn-countries' >
                   <Colombia />
-                  <button className='btn-countries'> Perú</button>
+                  <Peru />
               </div>
               <div className='containerbtn-countries' >
                   <button  className='btn-hiden'>Uganda</button>
