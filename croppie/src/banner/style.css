@@ -1,5 +1,5 @@
 .banner {
-    background-image: url('/background/BannerImage.svg');
+    background-image: url('/background/BannerImage.png');
     background-repeat: no-repeat;
     background-position: center; 
     background-size: contain;
@@ -52,7 +52,7 @@
 @media (max-width: 767px) {
 
   .banner{
-    background-image: url('/background/BannerImgMobil.svg');
+    background-image: url('/background/BannerImgMobil.png');
     height: auto;
     flex-direction: column;
     justify-content: center;

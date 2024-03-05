@@ -46,7 +46,7 @@ const Card = () => {
                 <div className='modal_contain'>
 
                     <article  className='modal_contain1' >
-                      <img className='icons_cover' src="/illustrations/phonePhotoApp.svg" alt="phone-img" />
+                      <img className='icons_cover' src="/illustrations/phonePhotoApp.png" alt="phone-img" />
                       <p className='text_cover'>
                       {language === 'es' ?  'Croppie es una aplicación móvil diseñada para ayudar a los pequeños caficultores en sus decisiones clave. Utiliza IA para estimar el rendimiento de la producción de café, y ofrece recomendaciones basadas en el análisis de las prácticas agrícolas.' : 'Croppie is a mobile app designed to support decision making of smallholder coffee producers. It uses AI to estimate coffee yield and provides recommendations based on the analysis of farmers’ agricultural practices.' }
                       </p>

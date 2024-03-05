@@ -70,7 +70,7 @@ const Card = () => {
                       </div>
                   </div>
                   <div className={`slider-slide ${currentSlide === 2 ? 'active' : ''}`}>
-                  {language === 'es' ?  <img  className='img-slide2'  src="/illustrations/dashboardES.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="/illustrations/dashboardEN.svg" alt="dashboard-img" /> }
+                  {language === 'es' ?  <img  className='img-slide2'  src="/illustrations/dashboardES.png" alt="dashboard-img" /> :<img  className='img-slide2'  src="/illustrations/dashboardEN.png" alt="dashboard-img" /> }
                 
                   </div>
                   <button className="slider-button-left" onClick={prevSlide}>
@@ -91,11 +91,11 @@ const Card = () => {
                       </div>
                   </div>
                   <div className={`slider-slide ${currentSlide2 === 2 ? 'active' : ''}`}>
-                  {language === 'es' ?  <img  className='img-slide2'  src="/illustrations/dashboardMobile1ES.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="/illustrations/dashboardMobile1EN.svg" alt="dashboard-img" /> }
+                  {language === 'es' ?  <img  className='img-slide2'  src="/illustrations/dashboardMobile1ES.png" alt="dashboard-img" /> :<img  className='img-slide2'  src="/illustrations/dashboardMobile1EN.png" alt="dashboard-img" /> }
                   </div>
 
                   <div className={`slider-slide ${currentSlide2 === 3 ? 'active' : ''}`}>
-                  {language === 'es' ?  <img  className='img-slide2'  src="/illustrations/dashboardMobile2ES.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="/illustrations/dashboardMobile2EN.svg" alt="dashboard-img" /> }
+                  {language === 'es' ?  <img  className='img-slide2'  src="/illustrations/dashboardMobile2ES.png" alt="dashboard-img" /> :<img  className='img-slide2'  src="/illustrations/dashboardMobile2EN.png" alt="dashboard-img" /> }
                 
                   </div>
                   <button className="slider-button-left" onClick={prevSlide2}>

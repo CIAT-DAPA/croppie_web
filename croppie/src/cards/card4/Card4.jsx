@@ -44,7 +44,7 @@ const Card = () => {
                 <h4 className='modal_title'>{language === 'es' ?  'Casos de uso ' : 'Use cases' }</h4>
                 <section className='modal4_contain'>
                   <article className='contain_art1'>
-                  {language === 'es' ? <img className='icons-conet' src="/illustrations/useCasesES.svg " alt="actors-img" /> :<img className='icons-conet2' src="/illustrations/useCasesEN.svg " alt="actors-img" /> }
+                  {language === 'es' ? <img className='icons-conet' src="/illustrations/useCasesES.png " alt="actors-img" /> :<img className='icons-conet2' src="/illustrations/useCasesEN.png " alt="actors-img" /> }
                   
                   </article>
 
