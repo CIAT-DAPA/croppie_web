@@ -45,7 +45,7 @@ function Menu() {
 
   return (
     <div className='menu'>
-      <img src="/logos/logoBorder.svg" className="logoCroppie" alt="logo croppie" />
+      <img src="logos/logoBorder.svg" className="logoCroppie" alt="logo croppie" />
       <ul className='seccionesMenu mobile'>
         <li>
           <a

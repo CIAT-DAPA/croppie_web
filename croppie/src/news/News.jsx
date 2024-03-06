@@ -15,7 +15,7 @@ const News = () => {
                 <button><a href='https://play.google.com/store/search?q=croppie&c=apps' target='_black'>{language === 'es' ?  'Descargar App' : 'Download App' }</a></button>
                 <span></span>
             </div>
-            <img className='newsmb' src="/icons/phone.svg" alt="" />
+            <img className='newsmb' src="icons/phone.svg" alt="" />
         
 
         </div>

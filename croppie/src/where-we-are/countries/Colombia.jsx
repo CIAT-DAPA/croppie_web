@@ -65,10 +65,10 @@ const Colombia = () => {
                   </div>
                   </div>
                   <button className="slider-button-left-pe" onClick={prevSlide}>
-                    <img src="/icons/prev.svg" alt="" />
+                    <img src="icons/prev.svg" alt="" />
                   </button>
                   <button className="slider-button-right-pe" onClick={nextSlide}>
-                    <img src="/icons/next (1).svg" alt="" />
+                    <img src="icons/next (1).svg" alt="" />
                   </button>
                 </div>                
             </section>

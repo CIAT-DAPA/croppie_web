@@ -65,27 +65,27 @@ const Card = () => {
               </div>
               <div  className='img-slide1'>
               {language === 'es' ?  
-                <img  src="/steps/step1.svg" alt="step1-img" />
+                <img  src="steps/step1.svg" alt="step1-img" />
                   :
-                <img src="/steps/step1EN.svg" alt="step1-img" /> }
+                <img src="steps/step1EN.svg" alt="step1-img" /> }
               </div>      
               
               </div>
               <div className={`slider-slide ${currentSlide === 2 ? 'active' : ''}`}>
-              {language === 'es' ?   <img  className='img-slide2' src="/steps/step234ES.svg" alt="step234-img" />
-              :<img  className='img-slide2' src="/steps/step234EN.svg" alt="step234-img" /> }
+              {language === 'es' ?   <img  className='img-slide2' src="steps/step234ES.svg" alt="step234-img" />
+              :<img  className='img-slide2' src="steps/step234EN.svg" alt="step234-img" /> }
             
 
               </div>
               <div className={`slider-slide ${currentSlide === 3 ? 'active' : ''}`}>
-              {language === 'es' ?<img  className='img-slide3'  src="/steps/calculation.svg" alt="step5-img" />
-              : <img  className='img-slide3 '  src="/steps/step5Yield.svg" alt="step5-img" />}
+              {language === 'es' ?<img  className='img-slide3'  src="steps/calculation.svg" alt="step5-img" />
+              : <img  className='img-slide3 '  src="steps/step5Yield.svg" alt="step5-img" />}
               </div>
               <button className="slider-button-left" onClick={prevSlide}>
-              <img src="/icons/prev.svg" alt="" />
+              <img src="icons/prev.svg" alt="" />
               </button>
               <button className="slider-button-right" onClick={nextSlide}>
-              <img src="/icons/next (1).svg" alt="" />
+              <img src="icons/next (1).svg" alt="" />
               </button>
             </div>
               
@@ -100,34 +100,34 @@ const Card = () => {
                       </div>
                   </div>
                   <div className={`slider-slide ${currentSlide2 === 2 ? 'active' : ''}`}>
-                      {language === 'es' ?  <img  className='img-slide2'  src="/steps/step1.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="/steps/step1EN.svg" alt="dashboard-img" /> }
+                      {language === 'es' ?  <img  className='img-slide2'  src="steps/step1.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="steps/step1EN.svg" alt="dashboard-img" /> }
                   </div>
 
                   <div className={`slider-slide ${currentSlide2 === 3 ? 'active' : ''}`}>
-                      {language === 'es' ?  <img  className='img-slide2'  src="/steps/step2.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="/steps/step2EN.svg" alt="dashboard-img" /> }
+                      {language === 'es' ?  <img  className='img-slide2'  src="steps/step2.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="steps/step2EN.svg" alt="dashboard-img" /> }
                 
                   </div>
                   <div className={`slider-slide ${currentSlide2 === 4 ? 'active' : ''}`}>
-                      {language === 'es' ?  <img  className='img-slide2'  src="/steps/step3.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="/steps/step3EN.svg" alt="dashboard-img" /> }
+                      {language === 'es' ?  <img  className='img-slide2'  src="steps/step3.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="steps/step3EN.svg" alt="dashboard-img" /> }
                 
                   </div>
                   <div className={`slider-slide ${currentSlide2 === 5 ? 'active' : ''}`}>
-                      {language === 'es' ?  <img  className='img-slide2'  src="/steps/step4.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="/steps/step4EN.svg" alt="dashboard-img" /> }
+                      {language === 'es' ?  <img  className='img-slide2'  src="steps/step4.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="steps/step4EN.svg" alt="dashboard-img" /> }
                 
                   </div>
                   <div className={`slider-slide ${currentSlide2 === 6 ? 'active' : ''}`}>
-                      {language === 'es' ?  <img  className='img-slide2'  src="/steps/step5MobileES1.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="/steps/step5MobileEN1.svg" alt="dashboard-img" /> }
+                      {language === 'es' ?  <img  className='img-slide2'  src="steps/step5MobileES1.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="steps/step5MobileEN1.svg" alt="dashboard-img" /> }
                 
                   </div>
                   <div className={`slider-slide ${currentSlide2 === 7 ? 'active' : ''}`}>
-                      {language === 'es' ?  <img  className='img-slide2'  src="/steps/step5MobileES2.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="/steps/step5MobileEN2.svg" alt="dashboard-img" /> }
+                      {language === 'es' ?  <img  className='img-slide2'  src="steps/step5MobileES2.svg" alt="dashboard-img" /> :<img  className='img-slide2'  src="steps/step5MobileEN2.svg" alt="dashboard-img" /> }
                 
                   </div>
                   <button className="slider-button-left" onClick={prevSlide2}>
-                    <img src="/icons/prev.svg" alt="" />
+                    <img src="icons/prev.svg" alt="" />
                   </button>
                   <button className="slider-button-right" onClick={nextSlide2}>
-                    <img src="/icons/next (1).svg" alt="" />
+                    <img src="icons/next (1).svg" alt="" />
                   </button>
                 </div>                
             </section>

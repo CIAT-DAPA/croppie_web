@@ -7,12 +7,12 @@ const Footer = () => {
   return (
     <section id="contact" className='containerFooter'>
         <div className='containerFooter_One'>
-            <img src="/logos/logoBorder.svg" className="logoCroppie" alt="logo croppie" />
+            <img src="logos/logoBorder.svg" className="logoCroppie" alt="logo croppie" />
             <p className='mobile'> {language === 'es' ?  ' Croppie es una aplicación móvil diseñada para ayudar a los pequeños caficultores en sus decisiones clave.' : '     Croppie is a mobile app designed to support decision making of smallholder coffee producers.' }</p>
             <div className='socialMedia'>
-                <img src="/icons/Facebook - Original.svg" alt="" />
-                <img src="/icons/Twitter - Original.svg" alt="" />
-                <img src="/icons/Instagram - Original.svg"  alt="" />
+                <img src="icons/Facebook - Original.svg" alt="" />
+                <img src="icons/Twitter - Original.svg" alt="" />
+                <img src="icons/Instagram - Original.svg"  alt="" />
            </div>
             <small>© 2023. All rights reserved.</small>
         </div>

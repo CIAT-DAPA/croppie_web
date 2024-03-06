@@ -15,8 +15,8 @@ const AboutUs = () => {
       <article>
         <div className='img-logo'>
           <a href='https://alliancebioversityciat.org/es' target="_blank">
-            {language === 'es' ?  <img className='logoCiat' src="/logos/logoCiatEs.png" alt="logo-ciat" /> : 
-            <img className='logoCiat'  src="/logos/logoCiatEN.png" alt="logo-ciat" /> }
+            {language === 'es' ?  <img className='logoCiat' src="logos/logoCiatEs.png" alt="logo-ciat" /> : 
+            <img className='logoCiat'  src="logos/logoCiatEN.png" alt="logo-ciat" /> }
 
           </a>
         </div>
@@ -29,7 +29,7 @@ const AboutUs = () => {
       </article>
       <article>
       <div className='img-logo'>
-      <a href='https://producersdirect.org/' target="_blank"><img className='logoCiat' src="/logos/logoProducersDirect.png" alt="logo-producers-direct" /></a>
+      <a href='https://producersdirect.org/' target="_blank"><img className='logoCiat' src="logos/logoProducersDirect.png" alt="logo-producers-direct" /></a>
         </div>
         <div>
             <p className='text'>
@@ -39,7 +39,7 @@ const AboutUs = () => {
       </article>
       <article>
       <div className='img-logo'>
-      <a href='https://tecnicafe.co/' target="_blank"><img className='logoCiat' src="/logos/logoTecnicafe.png" alt="logo-tecniafe" /></a></div>
+      <a href='https://tecnicafe.co/' target="_blank"><img className='logoCiat' src="logos/logoTecnicafe.png" alt="logo-tecniafe" /></a></div>
         <div>
             <p className='text'>
             {language === 'es' ?  ' Tecnicafé, es una corporación mixta sin animo de lucro que ha sido creada como el Primer Parque Tecnológico abierto y global, ubicado en el departamento del Cauca en Colombia. Con el objetivo de realizar innovación transformativa en el mundo del café a través de la sostenibilidad.' : ' Tecnicafé, a private-public non-profit organization, is the first global coffee technological innovation park, located in the department of Cauca in Colombia. It aims to carry out transformative innovation in the world of coffee through sustainability.' }

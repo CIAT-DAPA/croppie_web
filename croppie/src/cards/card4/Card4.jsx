@@ -44,7 +44,7 @@ const Card = () => {
                 <h4 className='modal_title'>{language === 'es' ?  'Casos de uso ' : 'Use cases' }</h4>
                 <section className='modal4_contain'>
                   <article className='contain_art1'>
-                  {language === 'es' ? <img className='icons-conet' src="/illustrations/useCasesES.png " alt="actors-img" /> :<img className='icons-conet2' src="/illustrations/useCasesEN.png " alt="actors-img" /> }
+                  {language === 'es' ? <img className='icons-conet' src="illustrations/useCasesES.png " alt="actors-img" /> :<img className='icons-conet2' src="illustrations/useCasesEN.png " alt="actors-img" /> }
                   
                   </article>
 
@@ -58,15 +58,15 @@ const Card = () => {
                   <div className={`slider-slide_2mb ${currentSlide === 1 ? 'active' : ''}`}>
                   <article>
                     <div>
-                      <img src="/icons/producerGreen.svg" alt="coffeSeed" />
+                      <img src="icons/producerGreen.svg" alt="coffeSeed" />
                       <p>{language === 'es' ?  'Productores: Asesoramiento agronómico personalizado.' : 'Producers: Personalized agronomic advice.' }</p>
                     </div>
                     <div>
-                    <img src="/icons/handsGreen.svg" alt="coffeSeed" />
+                    <img src="icons/handsGreen.svg" alt="coffeSeed" />
                       <p>{language === 'es' ?  'Cooperativas: Las cooperativas aseguran su rendimiento y planifican sus ventas.' : 'Cooperatives: Cooperatives ensure their performance and plan their sales.' }</p>
                     </div>
                     <div>
-                    <img src="/icons/moneyGreen.svg" alt="coffeSeed" />
+                    <img src="icons/moneyGreen.svg" alt="coffeSeed" />
                       <p>{language === 'es' ?  ' Financieras: Facilitar a los pequeños productores el acceso a préstamos y créditos.' : 'Financial Institutions: Facilitate access to loans and credit for small-scale producers.' }</p>
                     </div>                   
                   </article>
@@ -74,21 +74,21 @@ const Card = () => {
                   <div className={`slider-slide_2mb ${currentSlide === 2 ? 'active' : ''}`}>
                   <article>
                     <div>
-                      <img src="/icons/shieldGreen.svg" alt="coffeSeed" />
+                      <img src="icons/shieldGreen.svg" alt="coffeSeed" />
                       <p>{language === 'es' ?  'Aseguradoras: Mejorar los productos de seguro basados en índices.' : 'Insurers: Enhance index-based insurance products.' }</p>
                     </div>
                     <div>
-                    <img src="/icons/exportGreen.svg" alt="coffeSeed" />
+                    <img src="icons/exportGreen.svg" alt="coffeSeed" />
                       <p>{language === 'es' ?  'Exportadoras: Evitar posible evasión de la ley de deforestación y tener una trazabilidad del café.' : 'Exporters: Prevent potential evasion of the deforestation law and maintain traceability of coffee.' }</p>
                     </div>                 
                   </article>
                 
                   </div>
                   <button className="slider-button-left" onClick={prevSlide}>
-                    <img src="/icons/prev.svg" alt="" />
+                    <img src="icons/prev.svg" alt="" />
                   </button>
                   <button className="slider-button-right" onClick={nextSlide}>
-                    <img src="/icons/next (1).svg" alt="" />
+                    <img src="icons/next (1).svg" alt="" />
                   </button>
                 </div>                
             </section>

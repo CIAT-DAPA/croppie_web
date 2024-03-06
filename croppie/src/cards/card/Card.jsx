@@ -46,7 +46,7 @@ const Card = () => {
                 <div className='modal_contain'>
 
                     <article  className='modal_contain1' >
-                      <img className='icons_cover' src="/illustrations/phonePhotoApp.png" alt="phone-img" />
+                      <img className='icons_cover' src="illustrations/phonePhotoApp.png" alt="phone-img" />
                       <p className='text_cover'>
                       {language === 'es' ?  'Croppie es una aplicación móvil diseñada para ayudar a los pequeños caficultores en sus decisiones clave. Utiliza IA para estimar el rendimiento de la producción de café, y ofrece recomendaciones basadas en el análisis de las prácticas agrícolas.' : 'Croppie is a mobile app designed to support decision making of smallholder coffee producers. It uses AI to estimate coffee yield and provides recommendations based on the analysis of farmers’ agricultural practices.' }
                       </p>
@@ -54,23 +54,23 @@ const Card = () => {
                     </article>
                     <article  className='modal_contain2'>
                       <div className='container_icons'>
-                        <img className='image_icon' src="/icons/clockGreen.svg" alt="" />
+                        <img className='image_icon' src="icons/clockGreen.svg" alt="" />
                         <p className='text_icon'>{language === 'es' ?  '50% más rápido que métodos existentes' : ' 50% faster than existing methods' }</p>
                       </div>
                       <div className='container_icons'>
-                        <img className='image_icon' src="/icons/phoneGreen.svg" alt="" />
+                        <img className='image_icon' src="icons/phoneGreen.svg" alt="" />
                         <p className='text_icon'> {language === 'es' ?  'Uso offline' : 'Offline use' }</p>
                       </div>
                       <div className='container_icons'>
-                        <img className='image_icon' src="/icons/cycleGreen.svg" alt="" />
+                        <img className='image_icon' src="icons/cycleGreen.svg" alt="" />
                         <p className='text_icon'> {language === 'es' ?  'Estandarización del muestreos' : 'Standardized sampling' }</p>
                       </div>
                       <div className='container_icons'>
-                        <img className='image_icon' src="/icons/cameraGreen.svg" alt="" />
+                        <img className='image_icon' src="icons/cameraGreen.svg" alt="" />
                         <p className='text_icon'> {language === 'es' ?  'Evidencia digital' : 'Digital evidence' }</p>
                       </div>
                       <div className='container_icons'>
-                        <img className='image_icon' src="/icons/pinGreen.svg" alt="" />
+                        <img className='image_icon' src="icons/pinGreen.svg" alt="" />
                         <p className='text_icon'> {language === 'es' ?  'Información georreferenciada para trazabilidad total' : 'Georeferenced information for full traceability' }</p>
                       </div>
                     </article>
@@ -92,23 +92,23 @@ const Card = () => {
                     <div className={`slider-slide ${currentSlide === 2 ? 'active' : ''}`}>
                     <article  className='modal_contain2'>
                       <div className='container_icons'>
-                        <img className='image_icon' src="/icons/clockGreen.svg" alt="" />
+                        <img className='image_icon' src="icons/clockGreen.svg" alt="" />
                         <p className='text_icon'>{language === 'es' ?  '50% más rápido que métodos existentes' : ' 50% faster than existing methods' }</p>
                       </div>
                       <div className='container_icons'>
-                        <img className='image_icon' src="/icons/phoneGreen.svg" alt="" />
+                        <img className='image_icon' src="icons/phoneGreen.svg" alt="" />
                         <p className='text_icon'> {language === 'es' ?  'Uso offline' : 'Offline use' }</p>
                       </div>
                       <div className='container_icons'>
-                        <img className='image_icon' src="/icons/cycleGreen.svg" alt="" />
+                        <img className='image_icon' src="icons/cycleGreen.svg" alt="" />
                         <p className='text_icon'> {language === 'es' ?  'Estandarización del muestreos' : 'Standardized sampling' }</p>
                       </div>
                       <div className='container_icons'>
-                        <img className='image_icon' src="/icons/cameraGreen.svg" alt="" />
+                        <img className='image_icon' src="icons/cameraGreen.svg" alt="" />
                         <p className='text_icon'> {language === 'es' ?  'Evidencia digital' : 'Digital evidence' }</p>
                       </div>
                       <div className='container_icons'>
-                        <img className='image_icon' src="/icons/pinGreen.svg" alt="" />
+                        <img className='image_icon' src="icons/pinGreen.svg" alt="" />
                         <p className='text_icon'> {language === 'es' ?  'Información georreferenciada para trazabilidad total' : 'Georeferenced information for full traceability' }</p>
                       </div>
                     </article>
@@ -118,10 +118,10 @@ const Card = () => {
                 
 
                     <button className="slider-button-left" onClick={prevSlide}>
-                    <img src="/icons/prev.svg" alt="" />
+                    <img src="icons/prev.svg" alt="" />
                     </button>
                     <button className="slider-button-right" onClick={nextSlide}>
-                    <img src="/icons/next (1).svg" alt="" />
+                    <img src="icons/next (1).svg" alt="" />
                     </button>
             </div>
               

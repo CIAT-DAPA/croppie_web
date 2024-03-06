@@ -70,14 +70,14 @@ const Card = () => {
                       </div>
                   </div>
                   <div className={`slider-slide ${currentSlide === 2 ? 'active' : ''}`}>
-                  {language === 'es' ?  <img  className='img-slide2'  src="/illustrations/dashboardES.png" alt="dashboard-img" /> :<img  className='img-slide2'  src="/illustrations/dashboardEN.png" alt="dashboard-img" /> }
+                  {language === 'es' ?  <img  className='img-slide2'  src="illustrations/dashboardES.png" alt="dashboard-img" /> :<img  className='img-slide2'  src="illustrations/dashboardEN.png" alt="dashboard-img" /> }
                 
                   </div>
                   <button className="slider-button-left" onClick={prevSlide}>
-                    <img src="/icons/prev.svg" alt="" />
+                    <img src="icons/prev.svg" alt="" />
                   </button>
                   <button className="slider-button-right" onClick={nextSlide}>
-                    <img src="/icons/next (1).svg" alt="" />
+                    <img src="icons/next (1).svg" alt="" />
                   </button>
                 </div>                
             </section>
@@ -91,18 +91,18 @@ const Card = () => {
                       </div>
                   </div>
                   <div className={`slider-slide ${currentSlide2 === 2 ? 'active' : ''}`}>
-                  {language === 'es' ?  <img  className='img-slide2'  src="/illustrations/dashboardMobile1ES.png" alt="dashboard-img" /> :<img  className='img-slide2'  src="/illustrations/dashboardMobile1EN.png" alt="dashboard-img" /> }
+                  {language === 'es' ?  <img  className='img-slide2'  src="illustrations/dashboardMobile1ES.png" alt="dashboard-img" /> :<img  className='img-slide2'  src="illustrations/dashboardMobile1EN.png" alt="dashboard-img" /> }
                   </div>
 
                   <div className={`slider-slide ${currentSlide2 === 3 ? 'active' : ''}`}>
-                  {language === 'es' ?  <img  className='img-slide2'  src="/illustrations/dashboardMobile2ES.png" alt="dashboard-img" /> :<img  className='img-slide2'  src="/illustrations/dashboardMobile2EN.png" alt="dashboard-img" /> }
+                  {language === 'es' ?  <img  className='img-slide2'  src="illustrations/dashboardMobile2ES.png" alt="dashboard-img" /> :<img  className='img-slide2'  src="illustrations/dashboardMobile2EN.png" alt="dashboard-img" /> }
                 
                   </div>
                   <button className="slider-button-left" onClick={prevSlide2}>
-                    <img src="/icons/prev.svg" alt="" />
+                    <img src="icons/prev.svg" alt="" />
                   </button>
                   <button className="slider-button-right" onClick={nextSlide2}>
-                    <img src="/icons/next (1).svg" alt="" />
+                    <img src="icons/next (1).svg" alt="" />
                   </button>
                 </div>                
             </section>
