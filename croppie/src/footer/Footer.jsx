@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         <div className='containerFooter_Three'>
             <span className='footerTitle'>{language === 'en' ? 'Contact' : 'Contacto'}</span>
-            <span>Romain Gauteon
+            <span>Romain Gautron
             r.gautron@cgiar.org
             </span>
         </div>
