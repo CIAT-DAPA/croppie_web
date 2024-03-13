@@ -79,7 +79,7 @@ const Card = () => {
                     </div>
                     <div>
                     <img src="icons/exportGreen.svg" alt="coffeSeed" />
-                      <p>{language === 'es' ?  'Exportadoras: Evitar posible evasión de la ley de deforestación y tener una trazabilidad del café.' : 'Exporters: Prevent potential evasion of the deforestation law and maintain traceability of coffee.' }</p>
+                      <p>{language === 'es' ?  'Exportadoras: Evitar posible evasión de la regulación europea de deforestación (EUDR) y tener una trazabilidad del café (incluyendo huellas carbono/ambiental).' : 'Exporters: Prevent potential evasion of the European deforestation regulation (EUDR) and support traceability of coffee (carbon/environmental footprints).' }</p>
                     </div>                 
                   </article>
                 

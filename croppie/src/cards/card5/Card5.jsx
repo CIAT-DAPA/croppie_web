@@ -35,18 +35,15 @@ const Card = () => {
                     <div>
                     <img src="icons/coffeeSeed.svg" alt="coffeSeed" />
                       <p>{language === 'es' ?  'Modelo de IA entrenado y validado.' : 'Trained and validated AI model' }</p>
-                    </div>
+                    </div>           
                     <div>
                     <img src="icons/coffeeSeed.svg" alt="coffeSeed" />
                       <p>{language === 'es' ?  ' Publicaciones científicas y técnicas.' : 'Scientific and Technical Publications' }</p>
-                    </div>                   
-                  </article>
-
-                  <article >
-                    <div>
+                    </div>        
+                    {/* <div>
                     <img src="icons/coffeeSeed.svg" alt="coffeSeed" />
                       <p>{language === 'es' ?  '2200 agricultores que reciben asesoramiento digital.' : '2200 farmers received digital advisory.' }</p>
-                    </div>
+                    </div> */}
                     <div>
                     <img src="icons/coffeeSeed.svg" alt="coffeSeed" />
                       <p> {language === 'es' ?  'API para terceros.' : 'API for external access and collaboration.' }</p>

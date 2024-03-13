@@ -12,7 +12,7 @@ const Banner = () => {
                 
             </h2>
             <p className='banner_containTex2 '>
-            {language === 'es' ?  ' Croppie es una aplicación móvil diseñada para ayudar a los pequeños caficultores en sus decisiones clave.' : '     Croppie is a mobile app designed to support decision making of smallholder coffee producers.' }
+            {language === 'es' ?  ' Croppie es una solución tecnológica basada en fotos y diseñada para ayudar a los pequeños caficultores en sus decisiones claves.' : 'Croppie is a picture-based technological solution designed to support decision making of smallholder coffee producers.' }
             </p>
         </div>
         <button className='banner_button'>

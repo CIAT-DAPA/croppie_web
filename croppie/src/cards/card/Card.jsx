@@ -48,7 +48,7 @@ const Card = () => {
                     <article  className='modal_contain1' >
                       <img className='icons_cover' src="illustrations/phonePhotoApp.png" alt="phone-img" />
                       <p className='text_cover'>
-                      {language === 'es' ?  'Croppie es una aplicación móvil diseñada para ayudar a los pequeños caficultores en sus decisiones clave. Utiliza IA para estimar el rendimiento de la producción de café, y ofrece recomendaciones basadas en el análisis de las prácticas agrícolas.' : 'Croppie is a mobile app designed to support decision making of smallholder coffee producers. It uses AI to estimate coffee yield and provides recommendations based on the analysis of farmers’ agricultural practices.' }
+                      {language === 'es' ?  'Croppie es una solución tecnológica basada en fotos y diseñada para ayudar a los pequeños caficultores en sus decisiones claves. Utiliza IA para estimar de manera rápida el rendimiento de la producción de café, y ofrece recomendaciones basadas en el análisis de las prácticas agrícolas.' : "Croppie is a picture-based yield estimate technological solution designed to support decision making of smallholder coffee producers. It leverages AI to quickly estimate coffee yield and provides recommendations based on the analysis of farmers’ agricultural practices."}
                       </p>
 
                     </article>

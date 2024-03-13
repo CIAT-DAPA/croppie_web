@@ -61,7 +61,7 @@ const Card = () => {
                 <div className="slider-container">
               <div className={`slider-slide ${currentSlide === 1 ? 'active' : ''}`}>
               <div className=' text-slide2'>
-                <p> {language === 'es' ?  'Proporcionamos un sencillo protocolo de muestreo basado en una aplicación móvil que utiliza inteligencia artificial (IA) para realizar recuentos de cerezas de café y estimar el rendimiento en las parcelas de las fincas cafeteras.' : 'We provide a simple mobile app-based sampling protocol which leverages artificial intelligence (AI) to count coffee cherries and estimate yield on coffee farm plots.' }</p>
+                <p> {language === 'es' ?  'Proporcionamos un sencillo protocolo de muestreo basado en una aplicación móvil que utiliza inteligencia artificial (IA) para realizar recuentos de cerezas de café y estimar el rendimiento en las parcelas de las fincas cafeteras.' : 'We provide both a simple Android standalone mobile application and chatbot (for Whatsapp, Facebook Messenger and Telegram) which guide the users through a sampling protocol in coffee farm plots to generate coffee yield estimates.' }</p>
               </div>
               <div  className='img-slide1'>
               {language === 'es' ?  
@@ -96,7 +96,7 @@ const Card = () => {
                 <div className="slider-container">
                   <div className={`slider-slide ${currentSlide2 === 1 ? 'active' : ''}`}>
                       <div className='text-slide1'>
-                        <p>{language === 'es' ?  'Proporcionamos un sencillo protocolo de muestreo basado en una aplicación móvil que utiliza inteligencia artificial (IA) para realizar recuentos de cerezas de café y estimar el rendimiento en las parcelas de las fincas cafeteras.' : 'We provide a simple mobile app-based sampling protocol which leverages artificial intelligence (AI) to count coffee cherries and estimate yield on coffee farm plots.' }</p>
+                        <p>{language === 'es' ?  'Proporcionamos un sencillo protocolo de muestreo basado en una aplicación móvil que utiliza inteligencia artificial (IA) para realizar recuentos de cerezas de café y estimar el rendimiento en las parcelas de las fincas cafeteras.' : 'We provide both a simple Android standalone mobile application and chatbot (for Whatsapp, Facebook Messenger and Telegram) which guide the users through a sampling protocol in coffee farm plots to generate coffee yield estimates.' }</p>
                       </div>
                   </div>
                   <div className={`slider-slide ${currentSlide2 === 2 ? 'active' : ''}`}>
