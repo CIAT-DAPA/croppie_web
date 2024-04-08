@@ -8,7 +8,7 @@ const Footer = () => {
     <section id="contact" className='containerFooter'>
         <div className='containerFooter_One'>
             <img src="logos/logoBorder.svg" className="logoCroppie" alt="logo croppie" />
-            <p className='mobile'> {language === 'es' ?  ' Croppie es una aplicación móvil diseñada para ayudar a los pequeños caficultores en sus decisiones clave.' : '     Croppie is a mobile app designed to support decision making of smallholder coffee producers.' }</p>
+            <p className='mobile'> {language === 'es' ?  ' Croppie es una solución tecnológica diseñada para ayudar a los pequeños caficultores en sus decisiones clave.' : '     Croppie is a tech solution designed to support decision making of smallholder coffee producers.' }</p>
             <div className='socialMedia'>
                 <img src="icons/Facebook - Original.svg" alt="" />
                 <img src="icons/Twitter - Original.svg" alt="" />
@@ -17,7 +17,7 @@ const Footer = () => {
             <small>© 2023. All rights reserved.</small>
         </div>
         <div className='containerFooter_Tow footermb'>
-            <span className='footerTitle'>Menú</span>
+            <span className='footerTitle'>Menu</span>
             <span><a href="#banner">{language === 'en' ? 'Home' : 'Inicio'}</a></span>
             <span><a href="#cards">Croppie</a></span>
             <span><a href="#about-us">{language === 'en' ? 'About us' : 'Quienes somos'}</a></span>
@@ -27,8 +27,8 @@ const Footer = () => {
             <span className='footerTitle'> {language === 'es' ?  'Quiénes somos' : ' About us' }</span>
             <span><a href='https://alliancebioversityciat.org/es' target="_blank">CIAT</a></span>
             <span><a href='https://tecnicafe.co/' target="_blank">Tecnicafé</a></span>
-            <span><a href='https://producersdirect.org/' target="_blank">Producer Direct</a></span>
-            <span className='btn-hiden'>Producer Direct</span>
+            <span><a href='https://producersdirect.org/' target="_blank">Producers Direct</a></span>
+            <span className='btn-hiden'>Producers Direct</span>
         </div>
         <div className='containerFooter_Three'>
             <span className='footerTitle'>{language === 'en' ? 'Contact' : 'Contacto'}</span>

@@ -22,7 +22,7 @@ const AboutUs = () => {
         </div>
         <div>
             <p className='text'>
-            {language === 'es' ?  ' La Alianza de Bioversity International y el Centro Internacional de Agricultura Tropical (CIAT) brinda soluciones científicas que aprovechan la biodiversidad agrícola y transforman los sistemas alimentarios de manera sostenible con el objetivo de preservar y proteger el medio ambiente.' : 'The Alliance of Bioversity International and the International Center for Tropical Agriculture (CIAT) provides scientific solutions that take advantage of agricultural biodiversity and transform food systems in a sustainable way in order to protect and preserve the environment.' }
+            {language === 'es' ?  ' La Alianza de Bioversity International y el Centro Internacional de Agricultura Tropical (CIAT) brinda soluciones científicas que aprovechan la biodiversidad agrícola y transforman los sistemas alimentarios de manera sostenible con el objetivo de preservar y proteger el medio ambiente.' : ' The Alliance of Bioversity International and the International Center for Tropical Agriculture (CIAT) provides scientific solutions that take advantage of agricultural biodiversity and transform food systems in a sustainable way in order to protect and preserve the environment.' }
            
             </p>
         </div>
@@ -33,7 +33,7 @@ const AboutUs = () => {
         </div>
         <div>
             <p className='text'>
-            {language === 'es' ?  '  Producers Direct es fundada y dirigida por agricultores, tiene como objetivo crear nuevas oportunidades para el desarrollo de pequeños agricultores, en las que asuman el liderazgo y el desarrollo de soluciones innovadoras para enfrentar los desafíos del día a día en su labor.' : ' Producers Direct is founded and run by farmers. It aims to create new opportunities for the development of small farmers, in which they assume leadership and develop innovative solutions to face the day-to-day challenges of their work.' }
+            {language === 'es' ?  ' Producers Direct es fundada y dirigida por agricultores, tiene como objetivo crear nuevas oportunidades para el desarrollo de pequeños agricultores, en las que asuman el liderazgo y el desarrollo de soluciones innovadoras para enfrentar los desafíos del día a día en su labor.' : ' Producers Direct is an award-winning organisation committed to growing an international cooperative owned and powered by smallholder farmers.We believe that smallholders, our greatest asset, are stronger together, and our mission is to inspire unity, knowledge sharing, and enhance their resilience.' }
             </p>
         </div>
       </article>

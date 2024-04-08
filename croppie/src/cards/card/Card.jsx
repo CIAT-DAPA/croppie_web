@@ -42,13 +42,13 @@ const Card = () => {
                 X
             </button>
             <section className='modal-section modal-sectionmb'>
-                <h4 className='modal_title'>{language === 'es' ?  '¿Qué es Croppie?' : ' What is it  Croppie?' }</h4>
+                <h4 className='modal_title'>{language === 'es' ?  '¿Qué es Croppie?' : ' What is Croppie?' }</h4>
                 <div className='modal_contain'>
 
                     <article  className='modal_contain1' >
                       <img className='icons_cover' src="illustrations/phonePhotoApp.png" alt="phone-img" />
                       <p className='text_cover'>
-                      {language === 'es' ?  'Croppie es una solución tecnológica basada en fotos y diseñada para ayudar a los pequeños caficultores en sus decisiones claves. Utiliza IA para estimar de manera rápida el rendimiento de la producción de café, y ofrece recomendaciones basadas en el análisis de las prácticas agrícolas.' : "Croppie is a picture-based yield estimate technological solution designed to support decision making of smallholder coffee producers. It leverages AI to quickly estimate coffee yield and provides recommendations based on the analysis of farmers’ agricultural practices."}
+                      {language === 'es' ?  'Croppie es una solución tecnológica basada en fotos y diseñada para ayudar a los pequeños caficultores en sus decisiones claves. Utiliza IA para estimar de manera rápida el rendimiento de la producción de café, y ofrece recomendaciones basadas en el análisis de las prácticas agrícolas.' : "Croppie is a picture-based yield estimate technological solution designed to support decision making of smallholder coffee producers. It leverages AI to quickly estimate coffee yield and provides tailored recommendations based on the analysis of farmers’ practices."}
                       </p>
 
                     </article>
@@ -78,12 +78,12 @@ const Card = () => {
               
             </section>
             <section className='modal-section1MB'>
-                <h4 className='modal_title'>{language === 'es' ?  '¿Qué es Croppie?' : ' What is it  Croppie?' }</h4>
+                <h4 className='modal_title'>{language === 'es' ?  '¿Qué es Croppie?' : ' What is Croppie?' }</h4>
                 <div className="slider-container">
                     <div className={`slider-slide_1mb ${currentSlide === 1 ? 'active' : ''}`}>
                     <div className=' text-slide_1'>
                     <p>
-                      {language === 'es' ?  'Croppie es una aplicación móvil diseñada para ayudar a los pequeños caficultores en sus decisiones clave. Utiliza IA para estimar el rendimiento de la producción de café, y ofrece recomendaciones basadas en el análisis de las prácticas agrícolas.' : 'Croppie is a mobile app designed to support decision making of smallholder coffee producers. It uses AI to estimate coffee yield and provides recommendations based on the analysis of farmers’ agricultural practices.' }
+                      {language === 'es' ?  'Croppie es una aplicación móvil diseñada para ayudar a los pequeños caficultores en sus decisiones clave. Utiliza IA para estimar el rendimiento de la producción de café, y ofrece recomendaciones basadas en el análisis de las prácticas agrícolas.' : 'Croppie  is a picture-based yield estimate tech solution designed to support decision making of smallholder coffee producers. By leveraging AI technology, Croppie estimates coffee yield and provides recommendations based on the analysis of farmers’ agricultural practices to provide targeted recommendations, enabling them to optimise profitability and resilience amidst the challenges posed by climate change.' }
                       </p>
                     </div>
                           
@@ -132,7 +132,7 @@ const Card = () => {
       )}
     </div>
     <p className='card_title'>
-    {language === 'es' ?  '¿Qué es Croppie?' : ' What is it  Croppie?' }
+    {language === 'es' ?  '¿Qué es Croppie?' : ' What is Croppie?' }
     </p>
 
     <span className='card_btn' onClick={openModal}>

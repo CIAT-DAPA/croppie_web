@@ -17,9 +17,9 @@ Croppie is a picture-based solution designed to support decision making of small
 Download App
 
 ### 3. CARDS
-#### 3.1 What is it?
+#### 3.1 What is Croppie?
 
-Croppie is a picture-based yield estimate solution designed to support decision making of smallholder coffee producers. It leverages AI to quickly estimate coffee yield and provides recommendations based on the analysis of farmers’ agricultural practices.
+Croppie  is a picture-based yield estimate tech solution designed to support decision making of smallholder coffee producers. By leveraging AI technology, Croppie estimates coffee yield and provides recommendations based on the analysis of farmers’ agricultural practices to provide targeted recommendations, enabling them to optimise profitability and resilience amidst the challenges posed by climate change.
 
   - 50% faster than existing methods
   - Offline use
@@ -64,9 +64,9 @@ Recommendations: Temperature should be regulated and air flow increased in order
     
 ### 4. ABOUT US
 
- - The Alliance of Bioversity International and the International Center for Tropical Agriculture (CIAT) provides scientific solutions that take advantage of agricultural biodiversity and transform food systems in a sustainable way in order to protect and preserve the environment.
-  - Producers Direct is founded and run by farmers. It aims to create new opportunities for the development of small farmers, in which they assume leadership and develop innovative solutions to face the day-to-day challenges of their work.
-  - Tecnicafé, a private-public non-profit organization, is the first global coffee technological innovation park, located in the department of Cauca in Colombia. It aims to carry out transformative innovation in the world of coffee through sustainability.
+- The Alliance of Bioversity International and the International Center for Tropical Agriculture (CIAT) provides scientific solutions that take advantage of agricultural biodiversity and transform food systems in a sustainable way in order to protect and preserve the environment.
+- Producers Direct is an award-winning organisation committed to growing an international cooperative owned and powered by smallholder farmers.We believe that smallholders, our greatest asset, are stronger together, and our mission is to inspire unity, knowledge sharing, and enhance their resilience.
+- Tecnicafé, a private-public non-profit organization, is the first global coffee technological innovation park, located in the department of Cauca in Colombia. It aims to carry out transformative innovation in the world of coffee through sustainability.
     
 ### 5. WHERE WE ARE
 
