@@ -1,34 +1,328 @@
-.cards_container{
+.cards_container {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: start;
     justify-content: center;
-    gap: 2%;
+    gap: 1rem;
     position: relative;
     margin-bottom: 30px;
     width: 90%;
 }
-.titleSection{
+
+.titleSection {
     color: #555555;
     font-size: 40px;
-    
+
 }
-.containerSection{
+
+.containerSection {
     display: flex;
+
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
     margin-bottom: 60px;
-    
+
 }
+
 @media (max-width: 767px) {
-    .cards_container{
-        flex-wrap: wrap;
+    .cards_container {
         width: 100%;
-        height: 700px;
     }
-    .titleSection{
+
+    .titleSection {
         font-size: 30px;
-        
+
     }
+}
+
+
+
+.card_container {
+    width: 200px;
+    min-width: 190px;
+    height: 420px;
+    border-radius: 30px;
+    background-image: url('/background/bg-card.png');
+    /* Agrega la imagen de fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centra la imagen en el banner */
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.card_title {
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 80%;
+    text-align: center;
+    height: 42px;
+    margin: 0;
+
+
+}
+
+.card_btn {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+
+
+
+.modal_content {
+    width: 100%;
+    height: 100%;
+    gap: 16px;
+}
+
+.modal_content>* {
+    flex: 1;
+}
+
+.content_large {
+    display: flex;
+}
+
+.content_small {
+    display: none;
+
+}
+
+.modal_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+}
+
+
+
+@media (max-width: 767px) {
+
+    .content_large {
+        display: none;
+    }
+
+    .content_small {
+        display: flex;
+    }
+}
+
+
+
+
+.modal_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+}
+
+.text_cover {
+    width: 260px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+
+.slider_container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.slider_slide {
+    left: 36px;
+    right: 36px;
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    position: absolute;
+    transition: transform 0.5s;
+    transform: translateY(100%);
+}
+
+.slider_slide>* {
+    flex: 1;
+}
+
+
+
+.slider_slide.active {
+    transform: translateX(0);
+}
+
+.img_slide {
+    width: 100%;
+    height: 80%;
+    flex: 1;
+}
+
+.img_slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.text_slide {
+    display: flex;
+    justify-content: center;
+}
+
+.text_slide p {
+
+    font-size: 1.2rem;
+    color: #555555;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+
+.list_entry {
+    display: flex;
+    align-items: center;
+    width: 100%;
+ 
+    gap: 10px;
+
+}
+
+.list_entry img {
+    height: 70px;
+    width: 60px;
+}
+
+.list_entry p {
+    font-size: 1.2rem;
+
+    text-align: start;
+}
+
+
+
+
+@media (max-width: 767px) {
+
+
+    .list_entry p {
+        font-size: 1rem;
+    }
+
+
+}
+
+
+
+.btn-close {
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+
+/* Estilo de fondo borroso en el contenedor de tarjeta cuando se abre el modal */
+.card_container.active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo borroso */
+    z-index: 999;
+    /* Z-index alto para estar sobre otros elementos */
+}
+
+.modal_title {
+    color: #555555;
+    font-size: 40px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+@media (max-width: 1400px) {
+    .modal {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .card_container {
+        width: 340px;
+        height: 130px;
+        gap: 0;
+    }
+
+    .modal {
+        width: 95%;
+    }
+
+    .modal_title {
+        font-size: 30px;
+        margin: 0;
+        justify-content: center;
+    }
+}
+
+
+
+.slider-button-left {
+
+    border: none;
+    background-color: transparent;
+    opacity: 0.4;
+
+    position: absolute;
+    left: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+
+}
+
+.slider-button-right {
+    border: none;
+    background-color: transparent;
+    opacity: 0.4;
+
+    position: absolute;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
 }

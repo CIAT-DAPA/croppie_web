@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './style.css'
 import { useLanguage } from '../../LanguageContext';
+import Modal from "../../modal/Modal.jsx";
+
 
 const Card = () => {
-  const { language} = useLanguage();
+  const { language } = useLanguage();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(1);
 
@@ -34,112 +36,112 @@ const Card = () => {
 
   return (
     <div className='card_container'>
-    <div>
-      {isModalVisible && (
-        <div className='modal'>
-            {/* Contenido del modal este deberia pasarse por props */}
-            <button className='btn-close' onClick={closeModal}>
-                X
-            </button>
-            <section className='modal-section modal-sectionmb'>
-                <h4 className='modal_title'>{language === 'es' ?  '¿Qué es Croppie?' : ' What is Croppie?' }</h4>
-                <div className='modal_contain'>
 
-                    <article  className='modal_contain1' >
-                      <img className='icons_cover' src="illustrations/phonePhotoApp.png" alt="phone-img" />
-                      <p className='text_cover'>
-                      {language === 'es' ?  'Croppie es una solución tecnológica basada en fotos y diseñada para ayudar a los pequeños caficultores en sus decisiones claves. Utiliza IA para estimar de manera rápida el rendimiento de la producción de café, y ofrece recomendaciones basadas en el análisis de las prácticas agrícolas.' : "Croppie is a picture-based yield estimate technological solution designed to support decision making of smallholder coffee producers. It leverages AI to quickly estimate coffee yield and provides tailored recommendations based on the analysis of farmers’ practices."}
-                      </p>
 
-                    </article>
-                    <article  className='modal_contain2'>
-                      <div className='container_icons'>
-                        <img className='image_icon' src="icons/clockGreen.svg" alt="" />
-                        <p className='text_icon'>{language === 'es' ?  '50% más rápido que métodos existentes' : ' 50% faster than existing methods' }</p>
-                      </div>
-                      <div className='container_icons'>
-                        <img className='image_icon' src="icons/phoneGreen.svg" alt="" />
-                        <p className='text_icon'> {language === 'es' ?  'Uso offline' : 'Offline use' }</p>
-                      </div>
-                      <div className='container_icons'>
-                        <img className='image_icon' src="icons/cycleGreen.svg" alt="" />
-                        <p className='text_icon'> {language === 'es' ?  'Estandarización del muestreos' : 'Standardized sampling' }</p>
-                      </div>
-                      <div className='container_icons'>
-                        <img className='image_icon' src="icons/cameraGreen.svg" alt="" />
-                        <p className='text_icon'> {language === 'es' ?  'Evidencia digital' : 'Digital evidence' }</p>
-                      </div>
-                      <div className='container_icons'>
-                        <img className='image_icon' src="icons/pinGreen.svg" alt="" />
-                        <p className='text_icon'> {language === 'es' ?  'Información georreferenciada para trazabilidad total' : 'Georeferenced information for full traceability' }</p>
-                      </div>
-                    </article>
-                </div>
-              
-            </section>
-            <section className='modal-section1MB'>
-                <h4 className='modal_title'>{language === 'es' ?  '¿Qué es Croppie?' : ' What is Croppie?' }</h4>
-                <div className="slider-container">
-                    <div className={`slider-slide_1mb ${currentSlide === 1 ? 'active' : ''}`}>
-                    <div className=' text-slide_1'>
-                    <p>
-                      {language === 'es' ?  'Croppie es una aplicación móvil diseñada para ayudar a los pequeños caficultores en sus decisiones clave. Utiliza IA para estimar el rendimiento de la producción de café, y ofrece recomendaciones basadas en el análisis de las prácticas agrícolas.' : 'Croppie  is a picture-based yield estimate tech solution designed to support decision making of smallholder coffee producers. By leveraging AI technology, Croppie estimates coffee yield and provides recommendations based on the analysis of farmers’ agricultural practices to provide targeted recommendations, enabling them to optimise profitability and resilience amidst the challenges posed by climate change.' }
-                      </p>
-                    </div>
-                          
-                    
-                    </div>
-                    <div className={`slider-slide ${currentSlide === 2 ? 'active' : ''}`}>
-                    <article  className='modal_contain2'>
-                      <div className='container_icons'>
-                        <img className='image_icon' src="icons/clockGreen.svg" alt="" />
-                        <p className='text_icon'>{language === 'es' ?  '50% más rápido que métodos existentes' : ' 50% faster than existing methods' }</p>
-                      </div>
-                      <div className='container_icons'>
-                        <img className='image_icon' src="icons/phoneGreen.svg" alt="" />
-                        <p className='text_icon'> {language === 'es' ?  'Uso offline' : 'Offline use' }</p>
-                      </div>
-                      <div className='container_icons'>
-                        <img className='image_icon' src="icons/cycleGreen.svg" alt="" />
-                        <p className='text_icon'> {language === 'es' ?  'Estandarización del muestreos' : 'Standardized sampling' }</p>
-                      </div>
-                      <div className='container_icons'>
-                        <img className='image_icon' src="icons/cameraGreen.svg" alt="" />
-                        <p className='text_icon'> {language === 'es' ?  'Evidencia digital' : 'Digital evidence' }</p>
-                      </div>
-                      <div className='container_icons'>
-                        <img className='image_icon' src="icons/pinGreen.svg" alt="" />
-                        <p className='text_icon'> {language === 'es' ?  'Información georreferenciada para trazabilidad total' : 'Georeferenced information for full traceability' }</p>
-                      </div>
-                    </article>
-                  
+      <Modal isOpen={isModalVisible} onClose={closeModal}>
 
-                    </div>
-                
+        <h4 className='modal_title'>{language === 'es' ? '¿Qué es Croppie?' : ' What is Croppie?'}</h4>
 
-                    <button className="slider-button-left" onClick={prevSlide}>
-                    <img src="icons/prev.svg" alt="" />
-                    </button>
-                    <button className="slider-button-right" onClick={nextSlide}>
-                    <img src="icons/next (1).svg" alt="" />
-                    </button>
+        <section className='modal_content content_large'>
+
+          <article className='modal_detail' >
+            <img className='icons_cover' src="illustrations/phonePhotoApp.png" alt="phone-img" />
+            <div className='text_slide'>
+              <p >
+                {language === 'es' ? 'Croppie es una solución tecnológica basada en fotos y diseñada para ayudar a los pequeños caficultores en sus decisiones claves. Utiliza IA para estimar de manera rápida el rendimiento de la producción de café, y ofrece recomendaciones basadas en el análisis de las prácticas agrícolas.' : "Croppie is a picture-based yield estimate technological solution designed to support decision making of smallholder coffee producers. It leverages AI to quickly estimate coffee yield and provides tailored recommendations based on the analysis of farmers’ practices."}
+              </p>
             </div>
-              
-              
-            </section>
-        </div>
-        
-      )}
+          </article>
+
+          <article className='modal_detail'>
+            <div className='list_entry'>
+              <img src="icons/clockGreen.svg" alt="" />
+              <p >{language === 'es' ? '50% más rápido que métodos existentes' : ' 50% faster than existing methods'}</p>
+            </div>
+            <div className='list_entry'>
+              <img src="icons/phoneGreen.svg" alt="" />
+              <p > {language === 'es' ? 'Uso offline' : 'Offline use'}</p>
+            </div>
+            <div className='list_entry'>
+              <img src="icons/cycleGreen.svg" alt="" />
+              <p > {language === 'es' ? 'Estandarización del muestreos' : 'Standardized sampling'}</p>
+            </div>
+            <div className='list_entry'>
+              <img src="icons/cameraGreen.svg" alt="" />
+              <p > {language === 'es' ? 'Evidencia digital' : 'Digital evidence'}</p>
+            </div>
+            <div className='list_entry'>
+              <img src="icons/pinGreen.svg" alt="" />
+              <p > {language === 'es' ? 'Información georreferenciada para trazabilidad total' : 'Georeferenced information for full traceability'}</p>
+            </div>
+          </article>
+
+        </section>
+
+
+        <section className='modal_content content_small'>
+
+          <div className="slider_container">
+            <div className={`slider_slide ${currentSlide === 1 ? 'active' : ''}`}>
+              <div className=' text_slide'>
+                <p>
+                  {language === 'es' ? 'Croppie es una aplicación móvil diseñada para ayudar a los pequeños caficultores en sus decisiones clave. Utiliza IA para estimar el rendimiento de la producción de café, y ofrece recomendaciones basadas en el análisis de las prácticas agrícolas.' : 'Croppie  is a picture-based yield estimate tech solution designed to support decision making of smallholder coffee producers. By leveraging AI technology, Croppie estimates coffee yield and provides recommendations based on the analysis of farmers’ agricultural practices to provide targeted recommendations, enabling them to optimise profitability and resilience amidst the challenges posed by climate change.'}
+                </p>
+              </div>
+
+
+            </div>
+            <div className={`slider_slide ${currentSlide === 2 ? 'active' : ''}`}>
+              <article className='modal_detail'>
+                <div className='list_entry'>
+                  <img src="icons/clockGreen.svg" alt="" />
+                  <p >{language === 'es' ? '50% más rápido que métodos existentes' : ' 50% faster than existing methods'}</p>
+                </div>
+                <div className='list_entry'>
+                  <img src="icons/phoneGreen.svg" alt="" />
+                  <p > {language === 'es' ? 'Uso offline' : 'Offline use'}</p>
+                </div>
+                <div className='list_entry'>
+                  <img src="icons/cycleGreen.svg" alt="" />
+                  <p > {language === 'es' ? 'Estandarización del muestreos' : 'Standardized sampling'}</p>
+                </div>
+                <div className='list_entry'>
+                  <img src="icons/cameraGreen.svg" alt="" />
+                  <p > {language === 'es' ? 'Evidencia digital' : 'Digital evidence'}</p>
+                </div>
+                <div className='list_entry'>
+                  <img src="icons/pinGreen.svg" alt="" />
+                  <p > {language === 'es' ? 'Información georreferenciada para trazabilidad total' : 'Georeferenced information for full traceability'}</p>
+                </div>
+              </article>
+
+
+            </div>
+
+
+            <button className="slider-button-left" onClick={prevSlide}>
+              <img src="icons/prev.svg" alt="" />
+            </button>
+            <button className="slider-button-right" onClick={nextSlide}>
+              <img src="icons/next (1).svg" alt="" />
+            </button>
+          </div>
+
+
+        </section>
+
+
+      </Modal>
+
+      <p className='card_title'>
+        {language === 'es' ? '¿Qué es Croppie?' : ' What is Croppie?'}
+      </p>
+
+      <span className='card_btn' onClick={openModal}>
+        {language === 'es' ? ' Ver más' : 'View more'}
+      </span>
+
     </div>
-    <p className='card_title'>
-    {language === 'es' ?  '¿Qué es Croppie?' : ' What is Croppie?' }
-    </p>
-
-    <span className='card_btn' onClick={openModal}>
-    {language === 'es' ?  ' Ver más' : 'View more' }
-    </span>
-
-  </div>
   )
 }
 

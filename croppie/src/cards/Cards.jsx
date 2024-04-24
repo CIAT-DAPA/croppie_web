@@ -9,18 +9,18 @@ import { useLanguage } from '../LanguageContext';
 
 
 
+
 const Cards = () => {
   const { language} = useLanguage();
   
-  
+
   return (
     <section id= "cards" className='containerSection'>
     <h3 className='titleSection'>
     {language === 'es' ?  'Estimado de rendimiento asistido por IA' : 'AI-assisted coffee yield estimation' }
     
     </h3>
-    
-    
+
     
     <div className='cards_container'>
       <Card />
