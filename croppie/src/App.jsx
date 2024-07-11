@@ -6,6 +6,7 @@ import Sponsors from './sponsors/Sponsors.jsx'
 import WhereWeAre from './where-we-are/WhereWeAre.jsx'
 import News from './news/News.jsx'
 import Footer from './footer/Footer.jsx'
+import ExampleCoffeeYield from './example-coffee-yield/ExampleCoffeeYield.jsx'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
     <Banner />
     <Cards />
     <AboutUs />
+    <ExampleCoffeeYield />
     <Sponsors />   
     <WhereWeAre />
     <News />

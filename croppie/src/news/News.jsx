@@ -7,8 +7,8 @@ const News = () => {
     return (
         <section id='contact' className='containerNews'>
         <h2> {language === 'es' ?  'Noticias y actualizaciones' : 'News and updates' }</h2>
-        <div className='contaiNews'>
-            <div>
+      {/*  <div className='contaiNews'>
+             <div>
                 <h3>App CROPPIE </h3>
                 <p className='newsmb'>  {language === 'es' ?  'Croppie es una aplicación móvil diseñada para ayudar a los pequeños caficultores en sus decisiones clave.' : 'Croppie is a mobile application designed to help small coffee growers in their.' }    
                 </p>
@@ -19,6 +19,7 @@ const News = () => {
         
 
         </div>
+    */}
         
     
         </section>
