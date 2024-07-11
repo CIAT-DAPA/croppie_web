@@ -13,7 +13,6 @@ const ExampleCoffeeYield = () => {
     file: null
   });
 
-
   const [captchaSrc, setCaptchaSrc] = useState(``);
   const [isCaptchaLoading, setIsCaptchaLoading] = useState(false);
   const [isFormSubmitting, setIsFormSubmitting] = useState(false);
