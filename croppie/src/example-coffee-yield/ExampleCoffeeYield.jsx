@@ -18,10 +18,15 @@ const ExampleCoffeeYield = () => {
   const [isFormSubmitting, setIsFormSubmitting] = useState(false);
   const [error, setError] = useState('');
   const [yieldResult, setYieldResult] = useState({
-    avg_confidence: '',
-    fruit_count: '',
-    in: null,
-    out: null,
+
+    avg_confidence_per_image: null,
+    avg_fruit_count_per_image: null,
+    estimated_fruit_count: null,
+    estimated_yield_green_kg: null,
+    estimated_yield_kg: null,
+    estimated_yield_parchment_kg: null,
+    output_images: [],
+
   });
 
 
@@ -96,10 +101,13 @@ const ExampleCoffeeYield = () => {
     setIsFormSubmitting(true);
 
     setYieldResult({
-      avg_confidence: '',
-      fruit_count: '',
-      in: null,
-      out: null,
+      avg_confidence_per_image: null,
+      avg_fruit_count_per_image: null,
+      estimated_fruit_count: null,
+      estimated_yield_green_kg: null,
+      estimated_yield_kg: null,
+      estimated_yield_parchment_kg: null,
+      output_images: [],
     });
 
     setError('');
@@ -121,10 +129,11 @@ const ExampleCoffeeYield = () => {
       try {
 
         res = await response.json();
-        // console.log(res);
+        //console.log(res);
+
 
         if (response.ok) {
-          setYieldResult(res[0]);
+          setYieldResult(res);
         }
 
 
@@ -150,8 +159,18 @@ const ExampleCoffeeYield = () => {
   return (
     <section id="example" className='example-container'>
       <h2> {language === 'es' ? 'Ejemplo en vivo' : 'Live Demo'}</h2>
+      <section className='row'>
 
 
+        <p> {language === 'es' ? `Pruebe el ejemplo en vivo. 
+      Cargue una imagen de una planta de café con cerezas de café y deje que el algoritmo cuente la cantidad. 
+      Actualmente, el algoritmo está limitado a un máximo de 300 cerezas por imagen.` :
+          `Try out the live example. 
+        Upload a picture of a coffee plant with coffee cherries and let the algorithm count their number. 
+      Currently the algorithm is limited to maximum 300 cherries per image.`
+        }</p>
+
+      </section>
       <section className='wrap'>
         <form onSubmit={submitExample} >
           <fieldset disabled={isFormSubmitting}>
@@ -205,18 +224,33 @@ const ExampleCoffeeYield = () => {
 
         <div className='result-container'>
 
-          {!yieldResult.out && <span> {language === 'es' ? 'Resultado' : 'Result'}</span>}
-          {yieldResult.out &&
-            <img src={yieldResult.out} alt="Result Image" />
+          {yieldResult.output_images.length == 0 && <span> {language === 'es' ? 'Resultado' : 'Result'}</span>}
+          {isFormSubmitting && <div className="spinner"></div>}
+
+          {yieldResult.output_images.length > 0 &&
+            <img src={yieldResult.output_images[0]} alt="Result Image" />
           }
+          <p>
+            {yieldResult?.avg_fruit_count_per_image && <span> {language === 'es' ? 'Conteo de frutas' : 'Fruit count'}: {yieldResult.avg_fruit_count_per_image}</span>}
+            <br></br>
+            {yieldResult?.avg_confidence_per_image && <span> {language === 'es' ? 'Confianza' : 'Confidence'}: {Math.round(yieldResult.avg_confidence_per_image * 100)}%</span>}
+          </p>
         </div>
+
+
+
+
 
       </section>
 
 
 
 
+
+
     </section>
+
+
   )
 }
 
